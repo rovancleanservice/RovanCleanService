@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Best Advanced SEO Meta Tags -->
+  <title>افضل شركة تنظيف منازل وشركات بالقاهرة والجيزة | روفان كلين سرفيس 01507110429</title>
+  <meta name="description" content="افضل شركة تنظيف منازل وشركات بالقاهرة والجيزة - شركة روفان كلين سرفيس. متخصصون في تنظيف بعد التشطيب، جلي وتلميع الرخام، تنظيف عميق، تنظيف المطابخ، تنظيف الفلل والقصور، تنظيف السيراميك شديد الاتساخ، والمخازن بأحدث الأجهزة 01507110429.">
+  <meta name="keywords" content="افضل شركة تنظيف منازل وشركات, شركة تنظيف منازل بالقاهرة, شركة روفان كلين سرفيس, تنظيف بعد التشطيب, جلي وتلميع الرخام, تنظيف عميق للمنازل, تنظيف المطابخ, تنظيف الشركات والمكاتب, تنظيف الفلل والقصور, تنظيف السراميك شديد الاتساخ, تنظيف المخازن, تنظيف يومي, افضل خدمة تنظيف منازل, اسعار شركات تنظيف المنازل بالقاهرة">
+  <meta name="author" content="شركة روفان كلين سرفيس">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="geo.region" content="EG-C">
+  <meta name="geo.placename" content="القاهرة">
+  <meta name="theme-color" content="#04070d">
+
+  <!-- Open Graph / WhatsApp / Facebook SEO -->
+  <meta property="og:type" content="business.business">
+  <meta property="og:title" content="افضل شركة تنظيف منازل وشركات بالقاهرة | روفان كلين سرفيس 01507110429">
+  <meta property="og:description" content="خدمات النظافة المتكاملة للمنازل، الشركات، الفلل والقصور، جلي الرخام وتنظيف ما بعد التشطيب بالقاهرة والجيزة بأعلى جودة وضمان.">
+  <meta property="og:image" content="images/wagha.png">
+  <meta property="og:url" content="https://soufiane4103.github.io/index/">
+  <meta property="og:locale" content="ar_EG">
+  <meta property="og:site_name" content="شركة روفان كلين سرفيس">
+
+  <!-- Schema.org JSON-LD Structured Data for Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "شركة روفان كلين سرفيس - افضل شركة تنظيف منازل وشركات",
+    "image": "images/wagha.png",
+    "telephone": "+201507110429",
+    "priceRange": "EGP",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "القاهرة",
+      "addressRegion": "القاهرة والجيزة",
+      "addressCountry": "EG"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "30.0444",
+      "longitude": "31.2357"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "areaServed": [
+      "القاهرة", "الجيزة", "التجمع الخامس", "القاهرة الجديدة", "الشيخ زايد", "6 أكتوبر", "مدينة نصر", "مصر الجديدة", "المعادي", "الرحاب", "مدينتي", "الشروق"
+    ],
+    "description": "أفضل شركة تنظيف منازل وشركات وفلل وتنظيف ما بعد التشطيب وجلي الرخام في القاهرة والجيزة."
+  }
+  </script>
+
+  <!-- Google Fonts: Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* Premium Black, Gold & Royal Blue Theme Palette */
+    :root {
+      --bg-black: #04070d;
+      --bg-card: #090e1a;
+      --bg-surface: #0e172a;
+      --gold-primary: #d4af37;
+      --gold-light: #fae69e;
+      --gold-dark: #997316;
+      --blue-primary: #1d4ed8;
+      --blue-electric: #2563eb;
+      --blue-light: #38bdf8;
+      --blue-glow: rgba(37, 99, 235, 0.25);
+      --border-color: #1a273f;
+      --text-white: #ffffff;
+      --text-muted: #94a3b8;
+      --text-gold: #f5df88;
+      --whatsapp-green: #25d366;
+      --gold-gradient: linear-gradient(135deg, #d4af37 0%, #fae69e 50%, #997316 100%);
+      --blue-gradient: linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #0284c7 100%);
+      --card-gradient: linear-gradient(180deg, #0d1527 0%, #060a14 100%);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-black);
+      color: var(--text-white);
+      line-height: 1.65;
+      overflow-x: hidden;
+      padding-bottom: 70px;
+    }
+
+    /* Top Bar */
+    .top-bar {
