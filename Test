@@ -103,3 +103,1255 @@
 
     /* Top Bar */
     .top-bar {
+      background: #020408;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+      padding: 9px 18px;
+      font-size: 0.9rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .top-bar-info {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .top-bar-info span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: #cbd5e1;
+    }
+
+    .top-bar-info i {
+      color: var(--gold-primary);
+    }
+
+    .top-bar-phone a {
+      color: var(--gold-light);
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(212, 175, 55, 0.12);
+      padding: 5px 14px;
+      border-radius: 20px;
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      transition: 0.3s;
+    }
+
+    .top-bar-phone a:hover {
+      background: var(--gold-primary);
+      color: #000;
+    }
+
+    /* Header & Navigation */
+    header {
+      background: rgba(4, 7, 13, 0.97);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      border-bottom: 2px solid var(--gold-primary);
+      box-shadow: 0 4px 25px rgba(0,0,0,0.85), 0 0 15px var(--blue-glow);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .brand-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      background: var(--blue-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.5rem;
+      box-shadow: 0 0 15px rgba(37, 99, 235, 0.6);
+      border: 1.5px solid var(--gold-primary);
+    }
+
+    .brand-text h1 {
+      font-size: 1.4rem;
+      font-weight: 900;
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    .brand-text span {
+      font-size: 0.78rem;
+      color: var(--blue-light);
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .header-btns {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn-header-call {
+      background: var(--gold-gradient);
+      color: #04070d;
+      font-weight: 900;
+      padding: 9px 22px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+    }
+
+    .btn-header-call:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 22px rgba(212, 175, 55, 0.7);
+      background: linear-gradient(135deg, #fae69e, #d4af37);
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      background: linear-gradient(180deg, rgba(4,7,13,0.85) 0%, rgba(9,14,26,0.96) 100%), url('images/wagha.png') center/cover no-repeat;
+      padding: 65px 20px 75px;
+      text-align: center;
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    .hero-container {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .hero-seo-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(37, 99, 235, 0.18);
+      border: 1.5px solid var(--blue-electric);
+      color: var(--blue-light);
+      padding: 7px 22px;
+      border-radius: 50px;
+      font-size: 0.98rem;
+      font-weight: 800;
+      margin-bottom: 22px;
+      box-shadow: 0 0 18px rgba(37, 99, 235, 0.25);
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 900;
+      margin-bottom: 16px;
+      line-height: 1.35;
+      color: #ffffff;
+    }
+
+    .hero h1 span.gold {
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero h1 span.blue {
+      color: var(--blue-light);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+      margin-bottom: 32px;
+      max-width: 820px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.75;
+    }
+
+    .hero-cta {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 35px;
+    }
+
+    .btn-cta {
+      padding: 15px 30px;
+      border-radius: 35px;
+      font-weight: 900;
+      font-size: 1.1rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-call-gold {
+      background: var(--gold-gradient);
+      color: #04070d;
+      box-shadow: 0 6px 22px rgba(212, 175, 55, 0.45);
+    }
+
+    .btn-call-gold:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px rgba(212, 175, 55, 0.75);
+    }
+
+    .btn-whatsapp-blue {
+      background: var(--blue-gradient);
+      color: #ffffff;
+      box-shadow: 0 6px 22px rgba(37, 99, 235, 0.45);
+      border: 1px solid rgba(255,255,255,0.25);
+    }
+
+    .btn-whatsapp-blue:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px rgba(37, 99, 235, 0.75);
+    }
+
+    .hero-banner-frame {
+      max-width: 1000px;
+      margin: 40px auto 0;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 14px 40px rgba(0,0,0,0.95), 0 0 25px rgba(37, 99, 235, 0.35);
+      border: 2px solid var(--gold-primary);
+    }
+
+    .hero-banner-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Stats Bar */
+    .stats-bar {
+      background: #060a14;
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      padding: 32px 20px;
+    }
+
+    .stats-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+
+    .stat-card h3 {
+      font-size: 2.4rem;
+      font-weight: 900;
+      color: var(--gold-light);
+      margin-bottom: 4px;
+    }
+
+    .stat-card p {
+      color: var(--blue-light);
+      font-size: 0.98rem;
+      font-weight: 700;
+    }
+
+    /* Main Container & Section Titles */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .section-head {
+      text-align: center;
+      max-width: 880px;
+      margin: 70px auto 45px;
+      padding: 0 20px;
+    }
+
+    .section-head .sub {
+      color: var(--gold-primary);
+      font-weight: 800;
+      font-size: 1.05rem;
+      letter-spacing: 1.5px;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .section-head h2 {
+      font-size: 2.3rem;
+      font-weight: 900;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .section-head h2 span {
+      color: var(--blue-light);
+    }
+
+    .section-head::after {
+      content: '';
+      display: block;
+      width: 85px;
+      height: 4px;
+      background: var(--gold-gradient);
+      margin: 14px auto 0;
+      border-radius: 2px;
+    }
+
+    .section-head p {
+      color: var(--text-muted);
+      font-size: 1.08rem;
+      margin-top: 12px;
+    }
+
+    /* Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 32px;
+      margin-bottom: 60px;
+    }
+
+    .service-card {
+      background: var(--card-gradient);
+      border: 1.5px solid var(--border-color);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: all 0.35s ease;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 6px 22px rgba(0,0,0,0.6);
+      position: relative;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--gold-primary);
+      box-shadow: 0 14px 35px rgba(212, 175, 55, 0.25), 0 0 20px var(--blue-glow);
+    }
+
+    .service-img-wrap {
+      position: relative;
+      width: 100%;
+      height: 255px;
+      background: #020408;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .service-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: transform 0.5s ease;
+      background-color: #04070e;
+    }
+
+    .service-card:hover .service-img-wrap img {
+      transform: scale(1.06);
+    }
+
+    .service-badge {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(4, 7, 13, 0.9);
+      border: 1px solid var(--gold-primary);
+      color: var(--gold-light);
+      font-size: 0.84rem;
+      font-weight: 800;
+      padding: 4px 14px;
+      border-radius: 20px;
+      backdrop-filter: blur(6px);
+    }
+
+    .service-body {
+      padding: 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-body h3 {
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: #ffffff;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .service-body h3 i {
+      color: var(--gold-primary);
+      font-size: 1.2rem;
+    }
+
+    .service-body p {
+      color: #cbd5e1;
+      font-size: 0.98rem;
+      line-height: 1.7;
+      margin-bottom: 18px;
+      flex: 1;
+    }
+
+    .service-specs {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+      border-top: 1px dashed var(--border-color);
+      padding-top: 14px;
+    }
+
+    .service-specs li {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 7px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .service-specs li i {
+      color: var(--blue-light);
+      font-size: 0.85rem;
+    }
+
+    .card-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .btn-card-call {
+      background: rgba(212, 175, 55, 0.12);
+      border: 1.5px solid var(--gold-primary);
+      color: var(--gold-light);
+      padding: 10px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 0.92rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: 0.3s;
+    }
+
+    .btn-card-call:hover {
+      background: var(--gold-gradient);
+      color: #04070d;
+    }
+
+    .btn-card-wa {
+      background: rgba(37, 99, 235, 0.16);
+      border: 1.5px solid var(--blue-electric);
+      color: var(--blue-light);
+      padding: 10px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 0.92rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: 0.3s;
+    }
+
+    .btn-card-wa:hover {
+      background: var(--blue-gradient);
+      color: #fff;
+    }
+
+    /* Showcase & Posters Section */
+    .showcase-section {
+      background: var(--bg-surface);
+      padding: 65px 0;
+      border-top: 2px solid var(--border-color);
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    .showcase-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 32px;
+    }
+
+    .showcase-card {
+      background: var(--bg-black);
+      border: 2px solid var(--gold-dark);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.7);
+    }
+
+    .showcase-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .showcase-info {
+      padding: 24px;
+      text-align: center;
+    }
+
+    .showcase-info h3 {
+      color: var(--gold-light);
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .showcase-info p {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      margin-bottom: 20px;
+    }
+
+    /* Why Choose Us Features */
+    .why-section {
+      padding: 70px 0;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 26px;
+    }
+
+    .why-card {
+      background: var(--card-gradient);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      padding: 30px 22px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .why-card:hover {
+      border-color: var(--gold-primary);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 28px rgba(0,0,0,0.6);
+    }
+
+    .why-icon {
+      width: 70px;
+      height: 70px;
+      background: rgba(37, 99, 235, 0.14);
+      border: 2px solid var(--blue-electric);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 1.9rem;
+      color: var(--gold-primary);
+    }
+
+    .why-card h3 {
+      color: #fff;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .why-card p {
+      color: var(--text-muted);
+      font-size: 0.94rem;
+    }
+
+    /* Areas Section */
+    .areas-section {
+      background: #060a14;
+      padding: 60px 0;
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .areas-tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .area-badge {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: #e2e8f0;
+      padding: 10px 22px;
+      border-radius: 30px;
+      font-size: 0.98rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: 0.3s;
+    }
+
+    .area-badge:hover {
+      border-color: var(--gold-primary);
+      color: var(--gold-light);
+    }
+
+    .area-badge i {
+      color: var(--blue-light);
+    }
+
+    /* CTA Fast Booking Banner */
+    .cta-banner {
+      background: linear-gradient(135deg, #090e1a 0%, #0e172a 50%, #04070d 100%);
+      border: 2px solid var(--gold-primary);
+      border-radius: 24px;
+      padding: 48px 25px;
+      text-align: center;
+      margin: 65px auto;
+      max-width: 1080px;
+      box-shadow: 0 14px 40px rgba(212, 175, 55, 0.18), 0 0 25px var(--blue-glow);
+    }
+
+    .cta-banner h2 {
+      font-size: 2.2rem;
+      color: #fff;
+      margin-bottom: 14px;
+      font-weight: 900;
+    }
+
+    .cta-banner p {
+      color: #cbd5e1;
+      font-size: 1.18rem;
+      margin-bottom: 30px;
+    }
+
+    /* Floating Quick Buttons */
+    .floating-actions {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      z-index: 1000;
+    }
+
+    .float-circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.75rem;
+      text-decoration: none;
+      box-shadow: 0 6px 22px rgba(0,0,0,0.7);
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
+    }
+
+    .float-circle:hover {
+      transform: scale(1.15);
+    }
+
+    .float-wa {
+      background: var(--whatsapp-green);
+    }
+
+    .float-phone {
+      background: var(--blue-electric);
+      border: 1.5px solid var(--gold-primary);
+    }
+
+    .float-circle::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: inherit;
+      z-index: -1;
+      opacity: 0.6;
+      animation: ripple 2s infinite;
+    }
+
+    @keyframes ripple {
+      0% { transform: scale(1); opacity: 0.6; }
+      100% { transform: scale(1.45); opacity: 0; }
+    }
+
+    /* Footer */
+    footer {
+      background: #020306;
+      border-top: 2px solid var(--gold-dark);
+      padding: 48px 20px 25px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    .footer-brand {
+      font-size: 1.7rem;
+      font-weight: 900;
+      color: var(--gold-light);
+      margin-bottom: 10px;
+    }
+
+    .footer-phone-box {
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: #fff;
+      margin: 18px 0;
+    }
+
+    .footer-phone-box a {
+      color: var(--gold-light);
+      text-decoration: none;
+    }
+
+    .copy {
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding-top: 22px;
+      margin-top: 25px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 1.85rem; }
+      .hero p { font-size: 1.05rem; }
+      .top-bar { justify-content: center; text-align: center; }
+      .section-head h2 { font-size: 1.75rem; }
+      .services-grid { grid-template-columns: 1fr; }
+      .brand-text h1 { font-size: 1.15rem; }
+      .btn-header-call { padding: 7px 15px; font-size: 0.88rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="top-bar-info">
+      <span><i class="fa-solid fa-crown"></i> افضل شركة تنظيف منازل وشركات بالقاهرة والجيزة</span>
+      <span><i class="fa-solid fa-clock"></i> خدمة متوفرة 24 ساعة طوال أيام الأسبوع</span>
+    </div>
+    <div class="top-bar-phone">
+      <a href="tel:01507110429"><i class="fa-solid fa-phone-volume"></i> 01507110429</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="brand-box">
+        <div class="brand-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+        <div class="brand-text">
+          <h1>شركة روفان كلين سرفيس</h1>
+          <span>افضل شركة تنظيف منازل وشركات - 01507110429</span>
+        </div>
+      </a>
+      <div class="header-btns">
+        <a href="tel:01507110429" class="btn-header-call">
+          <i class="fa-solid fa-phone"></i> اتصل الآن
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-seo-tag">
+        <i class="fa-solid fa-shield-halved"></i> الجودة والضمان مع شركة روفان كلين سرفيس
+      </div>
+      <h1>افضل شركة تنظيف <span class="gold">منازل وشركات</span> بالقاهرة <span class="blue">01507110429</span></h1>
+      <p>
+        نقدم أعلى مستويات النظافة والتعقيم الشامل للشقق، الفلل والقصور، مقرات الشركات، تنظيف ما بعد التشطيب، وجلي وتلميع الرخام والسيراميك بأحدث المعدات الإيطالية والألمانية وأيدي عمالة محترفة وأمينة.
+      </p>
+
+      <div class="hero-cta">
+        <a href="tel:01507110429" class="btn-cta btn-call-gold">
+          <i class="fa-solid fa-phone-volume"></i> اتصل للحجز: 01507110429
+        </a>
+        <a href="https://wa.me/201507110429?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AD%D8%AC%D8%B2%20%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%B1%D9%88%D9%81%D8%A7%D9%86%20%D9%83%D9%84%D9%8A%D9%86" target="_blank" class="btn-cta btn-whatsapp-blue">
+          <i class="fa-brands fa-whatsapp"></i> تواصل عبر واتساب
+        </a>
+      </div>
+
+      <!-- Hero Showcase Image -->
+      <div class="hero-banner-frame">
+        <img src="images/wagha.png" alt="افضل شركة تنظيف منازل وشركات - شركة روفان كلين سرفيس">
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <section class="stats-bar">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <h3>+10</h3>
+        <p>سنوات خبرة واحترافية</p>
+      </div>
+      <div class="stat-card">
+        <h3>+5000</h3>
+        <p>عميل يثقون في خدماتنا</p>
+      </div>
+      <div class="stat-card">
+        <h3>100%</h3>
+        <p>ضمان الجودة ورضا العميل</p>
+      </div>
+      <div class="stat-card">
+        <h3>24/7</h3>
+        <p>خدمة سريعة في القاهرة والجيزة</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Ordered List Strictly Matching Request -->
+  <main class="container" id="services">
+    <div class="section-head">
+      <span class="sub">قائمة الخدمات المتخصصة</span>
+      <h2>دليل خدمات <span>روفان كلين سرفيس</span> المتكاملة</h2>
+      <p>دليلك الشامل لأفضل حلول النظافة والتعقيم الفندقي والتجاري بأعلى درجات الإتقان وبأفضل الأسعار.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- 1. تنظيف المنازل -->
+      <article class="service-card">
+        <div class="service-img-wrap">
+          <img src="images/tanzef-ade.png" alt="تنظيف المنازل - شركة روفان كلين سرفيس">
+          <span class="service-badge">الخدمة الأساسية</span>
+        </div>
+        <div class="service-body">
+          <h3><i class="fa-solid fa-house"></i> 1. تنظيف المنازل</h3>
+          <p>
+            خدمة شاملة لنظافة المنازل والشقق السكنية: كنس ومسح الأرضيات، إزالة الأتربة، تلميع الأثاث والزجاج، وترتيب الغرف وتعقيم الحمامات لبيئة منزلية نقية ومريحة.
+          </p>
+          <ul class="service-specs">
+            <li><i class="fa-solid fa-check-circle"></i> إزالة الغبار والأتربة من كافة الزوايا</li>
+            <li><i class="fa-solid fa-check-circle"></i> تلميع الأثاث الخشبي والمقابض والأبواب</li>
+            <li><i class="fa-solid fa-check-circle"></i> تطهير وتعطير متكامل لكافة أرجاء المنزل</li>
+          </ul>
+          <div class="card-actions">
+            <a href="tel:01507110429" class="btn-card-call"><i class="fa-solid fa-phone"></i> اتصال</a>
+            <a href="https://wa.me/201507110429?text=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B2%D9%84" target="_blank" class="btn-card-wa"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. تنظيف بعد التشطيب -->
+      <article class="service-card">
+        <div class="service-img-wrap">
+          <img src="images/tanzef-bad-altashteb .png" alt="تنظيف بعد التشطيب - روفان كلين">
+          <span class="service-badge">تجهيز فوري للسكن</span>
+        </div>
+        <div class="service-body">
+          <h3><i class="fa-solid fa-paint-roller"></i> 2. تنظيف بعد التشطيب</h3>
+          <p>
+            إزالة كاملة لآثار البويات، الجبس، الأسمنت، اللواصق، وبواقي مواد البناء مع تنظيف مجاري الشبابيك والألوميتال وغسيل الأرضيات بماكينات متخصصة لتسليم العقار جاهزاً للسكن.
+          </p>
+          <ul class="service-specs">
+            <li><i class="fa-solid fa-check-circle"></i> قشط الدهانات والجبس دون تجريح السطح</li>
+            <li><i class="fa-solid fa-check-circle"></i> غسيل مكثف للأرضيات بماكينات السنجل ديسك</li>
+            <li><i class="fa-solid fa-check-circle"></i> إزالة استيكرات الألوميتال والزجاج وتلميعه</li>
+          </ul>
+          <div class="card-actions">
+            <a href="tel:01507110429" class="btn-card-call"><i class="fa-solid fa-phone"></i> اتصال</a>
+            <a href="https://wa.me/201507110429?text=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A8%D8%B9%D8%AF%20%D8%A7%D9%84%D8%AA%D8%B4%D8%B7%D9%8A%D8%A8" target="_blank" class="btn-card-wa"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. جلي وتلميع الرخام -->
+      <article class="service-card">
+        <div class="service-img-wrap">
+          <img src="images/galy-rkham.png" alt="جلي وتلميع الرخام - روفان كلين سرفيس">
+          <span class="service-badge">أقراص الكريستال الإيطالي</span>
+        </div>
+        <div class="service-body">
+          <h3><i class="fa-solid fa-gem"></i> 3. جلي وتلميع الرخام</h3>
+          <p>
+            استعادة البريق الطبيعي للرخام والجرانيت، تسوية الفواصل، وإزالة الخدوش والبقع العميقة بماكينات إيطالية وتطبيق طبقة حماية كريستالية تمنحه لمعاناً يشبه المرآة.
+          </p>
+          <ul class="service-specs">
+            <li><i class="fa-solid fa-check-circle"></i> تسوية الفروق والخدوش بين الألواح</li>
+            <li><i class="fa-solid fa-check-circle"></i> تلميع بمادة الكريستال الإيطالي الأصلية</li>
+            <li><i class="fa-solid fa-check-circle"></i> معالجة وحقن فواصل الرخام بالكامل</li>
+          </ul>
+          <div class="card-actions">
+            <a href="tel:01507110429" class="btn-card-call"><i class="fa-solid fa-phone"></i> اتصال</a>
+            <a href="https://wa.me/201507110429?text=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AC%D9%84%D9%8A%20%D9%88%D8%AA%D9%84%D9%85%D9%8A%D8%B9%20%D8%A7%D9%84%D8%B1%D8%AE%D8%A7%D9%85" target="_blank" class="btn-card-wa"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. تنظيف عميق للمنازل -->
+      <article class="service-card">
+        <div class="service-img-wrap">
+          <img src="images/tanzef-amek.png" alt="تنظيف عميق للمنازل - روفان كلين سرفيس">
+          <span class="service-badge">عناية فائقة وتطهير</span>
+        </div>
+        <div class="service-body">
+          <h3><i class="fa-solid fa-sparkles"></i> 4. تنظيف عميق للمنازل</h3>
+          <p>
+            تنظيف فندقي تفصيلي يصل للأماكن الصعبة وخلف الأثاث، تنظيف الجدران، النجف، الستائر، التعقيم الحراري للحمامات، وتطهير المنزل بالكامل من الجراثيم والميكروبات.
+          </p>
+          <ul class="service-specs">
+            <li><i class="fa-solid fa-check-circle"></i> تحريك الأثاث وتنظيف ما تحته بعناية</li>
+            <li><i class="fa-solid fa-check-circle"></i> تلميع النجف والتحف والأبواب الخشبية</li>
+            <li><i class="fa-solid fa-check-circle"></i> غسيل وتطهير الحمامات بمطهرات طبية</li>
+          </ul>
+          <div class="card-actions">
+            <a href="tel:01507110429" class="btn-card-call"><i class="fa-solid fa-phone"></i> اتصال</a>
+            <a href="https://wa.me/201507110429?text=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D8%B9%D9%85%D9%8A%D9%82" target="_blank" class="btn-card-wa"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. تنظيف المطابخ -->
+      <article class="service-card">
+        <div class="service-img-wrap">
+          <img src="images/kitchencleaning.png" alt="تنظيف المطابخ وإذابة الدهون - روفان كلين">
+          <span class="service-badge">إذابة أصعب الدهون</span>
+        </div>
+        <div class="service-body">
+          <h3><i class="fa-solid fa-utensils"></i> 5. تنظيف المطابخ</h3>
+          <p>
+            تفكيك وإذابة أقسى الدهون المتراكمة على السيراميك، الشفاطات، البوتاجازات، الدواليب، والأسطح، مع التعقيم الكامل بالمواد المخصصة للأماكن الغذائية الآمنة.
+          </p>
+          <ul class="service-specs">
+            <li><i class="fa-solid fa-check-circle"></i> تنظيف عميق لشفاطات وأفران الغاز</li>
+            <li><i class="fa-solid fa-check-circle"></i> تلميع السيراميك والجرانيت وإزالة التكلسات</li>
+            <li><i class="fa-solid fa-check-circle"></i> تطهير خزائن المطبخ من الداخل والخارج</li>
+          </ul>
+          <div class="card-actions">
+            <a href="tel:01507110429" class="btn-card-call"><i class="fa-solid fa-phone"></i> اتصال</a>
+            <a href="https://wa.me/201507110429?text=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D9%85%D8%B7%D8%A7%D8%A8%D8%AE" target="_blank" class="btn-card-wa"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+          </div>
+        </div>
+      </article>
+
+<!-- 6. تنظيف الشركات والمكاتب -->
+<article class="service-card">
+  <div class="service-img-wrap">
+    <img src="images/tanzefshrekat.png" alt="تنظيف الشركات والمكاتب - روفان كلين">
+    <span class="service-badge">عقود دورية مخصصة</span>
+  </div>
+  <div class="service-body">
+    <h3><i class="fa-solid fa-building"></i> 6. تنظيف الشركات والمكاتب</h3>
+    <p>
+      حلول نظافة احترافية للشركات، البنوك، العيادات والمقرات الإدارية بعقود دورية (يومية/أسبوعية/شهرية) لضمان بيئة عمل معقمة وواجهة مشرفة تليق بعملائك.
+    </p>
+    <ul class="service-specs">
+      <li><i class="fa-solid fa-check-circle"></i> تنظيف وتعقيم المكاتب والشاشات والأرضيات</li>
+      <li><i class="fa-solid fa-check-circle"></i> غسيل كراسي المكاتب والموكيت بالبخار</li>
+      <li><i class="fa-solid fa-check-circle"></i> عمالة نظافة مدربة بنظام الزيارات الدورية</li>
+    </ul>
+    <div class="card-actions">
+      <a href="tel:01507110429" class="btn-card-call"><i class="fa-solid fa-phone"></i> اتصال</a>
+      <a href="https://wa.me/201507110429?text=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D9%83%D8%A7%D8%AA%D8%A8" target="_blank" class="btn-card-wa"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+    </div>
+  </div>
+</article>
+    
+      <!-- 7. تنظيف الفلل والقصور -->
+      <article class="service-card">
+        <div class="service-img-wrap">
+          <img src="images/fallal-kosor.png" alt="تنظيف الفلل والقصور - روفان كلين سرفيس">
+          <span class="service-badge">مساحات كبرى وأطقم ضخمة</span>
+        </div>
+        <div class="service-body">
+          <h3><i class="fa-solid fa-landmark"></i> 7. تنظيف الفلل والقصور</h3>
+          <p>
+            خدمات متكاملة للمساحات الواسعة: نظافة الأدوار والسلالم، الواجهات الزجاجية، غسيل المفروشات والكنب والستائر بالبخار، جلي أرضيات التراس والحدائق، والتعقيم الشامل.
+          </p>
+          <ul class="service-specs">
+            <li><i class="fa-solid fa-check-circle"></i> غسيل الكنب والصالونات والسجاد بالبخار</li>
+            <li><i class="fa-solid fa-check-circle"></i> تنظيف السلالم والدرابزينات والواجهات</li>
+            <li><i class="fa-solid fa-check-circle"></i> أطقم عمل مدربة لإنجاز المساحات الكبرى</li>
+          </ul>
+          <div class="card-actions">
+            <a href="tel:01507110429" class="btn-card-call"><i class="fa-solid fa-phone"></i> اتصال</a>
+            <a href="https://wa.me/201507110429?text=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D9%81%D9%84%D9%84%20%D9%88%D8%A7%D9%84%D9%82%D8%B5%D9%88%D8%B1" target="_blank" class="btn-card-wa"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 8. تنظيف السراميك شديد الاتساخ -->
+      <article class="service-card">
+        <div class="service-img-wrap">
+          <img src="images/tanzef-alsramek.png" alt="تنظيف السراميك شديد الاتساخ والبورسلين - روفان كلين">
+          <span class="service-badge">تفتيح الفواصل والتلميع</span>
+        </div>
+        <div class="service-body">
+          <h3><i class="fa-solid fa-border-all"></i> 8. تنظيف السراميك شديد الاتساخ</h3>
+          <p>
+            استخدام ماكينات الغسيل الدوارة ومواد كيميائية آمنة لإزالة أعتى التكلسات، الصدأ، بقع الزيوت، وتفتيح عراميس وفواصل السيراميك والبورسلين لتعود كأنها جديدة.
+          </p>
+          <ul class="service-specs">
+            <li><i class="fa-solid fa-check-circle"></i> ماكينات سنغل ديسك لتنظيف مسام السيراميك</li>
+            <li><i class="fa-solid fa-check-circle"></i> إزالة التكلسات واصفرار الفواصل والعراميس</li>
+            <li><i class="fa-solid fa-check-circle"></i> طبقة شمعية واقية تدوم طويلاً</li>
+          </ul>
+          <div class="card-actions">
+            <a href="tel:01507110429" class="btn-card-call"><i class="fa-solid fa-phone"></i> اتصال</a>
+            <a href="https://wa.me/201507110429?text=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D8%B3%D9%8A%D8%B1%D8%A7%D9%85%D9%8A%D9%83" target="_blank" class="btn-card-wa"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 9. تنظيف المخازن -->
+      <article class="service-card">
+        <div class="service-img-wrap">
+          <img src="images/mhazen.png" alt="تنظيف المخازن والمستودعات - روفان كلين سرفيس">
+          <span class="service-badge">حلول صناعية وتجارية</span>
+        </div>
+        <div class="service-body">
+          <h3><i class="fa-solid fa-warehouse"></i> 9. تنظيف المخازن والمستودعات</h3>
+          <p>
+            تنظيف وجلي الأرضيات الخرسانية والإيبوكسي للمستودعات والهناجر، إزالة الشحوم والأتربة الكثيفة، وتطهير المنشآت لحماية البضائع والمخزون من الأضرار.
+          </p>
+          <ul class="service-specs">
+            <li><i class="fa-solid fa-check-circle"></i> تنظيف الأرفف المعدنية والأرضيات الكبرى</li>
+            <li><i class="fa-solid fa-check-circle"></i> إزالة الزيوت والشحوم المستعصية</li>
+            <li><i class="fa-solid fa-check-circle"></i> مكافحة القوارض والحشرات الضارة بالمخازن</li>
+          </ul>
+          <div class="card-actions">
+            <a href="tel:01507110429" class="btn-card-call"><i class="fa-solid fa-phone"></i> اتصال</a>
+            <a href="https://wa.me/201507110429?text=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D9%85%D8%AE%D8%A7%D8%B2%D9%86" target="_blank" class="btn-card-wa"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 10. تنظيف يومي -->
+      <article class="service-card">
+        <div class="service-img-wrap">
+          <img src="images/kanb.png" alt="تنظيف يومي ودوري للمفروشات والكنب - روفان كلين">
+          <span class="service-badge">اشتراكات وزيارات دورية</span>
+        </div>
+        <div class="service-body">
+          <h3><i class="fa-solid fa-calendar-check"></i> 10. تنظيف يومي ودوري</h3>
+          <p>
+            باقات نظافة يومية ودورية منتظمة للمنازل والعيادات والمكاتب بأوقات مرنة، تشمل الترتيب، كنس الأرضيات، تعقيم الأسطح، وغسيل الكنب والمفروشات لراحة مستمرة.
+          </p>
+          <ul class="service-specs">
+            <li><i class="fa-solid fa-check-circle"></i> زيارات منتظمة وفق جدولك المناسب</li>
+            <li><i class="fa-solid fa-check-circle"></i> تعقيم المفروشات والكنب ضد البكتيريا</li>
+            <li><i class="fa-solid fa-check-circle"></i> أسعار وباقات اشتراك مخفضة وعادلة</li>
+          </ul>
+          <div class="card-actions">
+            <a href="tel:01507110429" class="btn-card-call"><i class="fa-solid fa-phone"></i> اتصال</a>
+            <a href="https://wa.me/201507110429?text=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A8%D8%A7%D9%82%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D9%8A%D9%88%D9%85%D9%8A" target="_blank" class="btn-card-wa"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 11. افضل خدمة تنظيف منازل (الكتالوج الشامل) -->
+      <article class="service-card" style="border-color: var(--gold-primary);">
+        <div class="service-img-wrap">
+          <img src="images/rovan_all_services_grid_catalog.jpg" alt="افضل خدمة تنظيف منازل بالقاهرة - روفان كلين سرفيس">
+          <span class="service-badge" style="background:var(--gold-gradient); color:#000;">الباقة الشاملة الأكثر طلباً</span>
+        </div>
+        <div class="service-body">
+          <h3><i class="fa-solid fa-crown"></i> 11. افضل خدمة تنظيف منازل</h3>
+          <p>
+            الحل الأقوى المتكامل الذي يجمع كافة خدمات النظافة في باقة واحدة: تنظيف عميق + جلي وتلميع رخام وسيراميك + تعقيم مطابخ وحمامات + غسيل مفروشات بالبخار.
+          </p>
+          <ul class="service-specs">
+            <li><i class="fa-solid fa-check-circle"></i> خصم خاص عند طلب الباقة المجمعة</li>
+            <li><i class="fa-solid fa-check-circle"></i> إشراف هندسي وفني على جودة التنفيذ</li>
+            <li><i class="fa-solid fa-check-circle"></i> ضمان معتمد حتى رضا العميل بنسبة 100%</li>
+          </ul>
+          <div class="card-actions">
+            <a href="tel:01507110429" class="btn-card-call"><i class="fa-solid fa-phone"></i> اتصال</a>
+            <a href="https://wa.me/201507110429?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D9%85%D9%84%D8%A9%20%D9%84%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D9%85%D9%86%D8%B2%D9%84" target="_blank" class="btn-card-wa"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- خدمات إضافية متخصصة (مكافحة الحشرات وواجهات الزجاج) -->
+      <article class="service-card">
+        <div class="service-img-wrap">
+          <img src="images/mkafht-alhshrat.png" alt="مكافحة الحشرات ورش المبيدات - روفان كلين">
+          <span class="service-badge">مبيدات ألمانية معتمدة</span>
+        </div>
+        <div class="service-body">
+          <h3><i class="fa-solid fa-shield-virus"></i> مكافحة الحشرات ورش المبيدات</h3>
+          <p>
+            إبادة تامة لجميع أنواع الحشرات والقوارض بدون رائحة وبدون مغادرة المكان، مع خدمات تنظيف واجهات الزجاج والكلادينج للشركات والمباني الشاهقة.
+          </p>
+          <ul class="service-specs">
+            <li><i class="fa-solid fa-check-circle"></i> مبيدات صحية آمنة على الأطفال والحيوانات</li>
+            <li><i class="fa-solid fa-check-circle"></i> تنظيف واجهات الزجاج بأحدث معدات الأمان</li>
+            <li><i class="fa-solid fa-check-circle"></i> ضمان معتمد ومتابعة دورية</li>
+          </ul>
+          <div class="card-actions">
+            <a href="tel:01507110429" class="btn-card-call"><i class="fa-solid fa-phone"></i> اتصال</a>
+            <a href="https://wa.me/201507110429?text=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%A7%D9%84%D8%AD%D8%B4%D8%B1%D8%A7%D8%AA" target="_blank" class="btn-card-wa"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Showcase & Poster Section -->
+  <section class="showcase-section">
+    <div class="container">
+      <div class="section-head" style="margin-top:0;">
+        <span class="sub">عروض حصرية</span>
+        <h2>كتالوج وبوسترات <span>روفان كلين سرفيس</span></h2>
+        <p>عروض وخصومات مميزة على جميع خدمات النظافة والتعقيم بمناسبة الموسم.</p>
+      </div>
+
+      <div class="showcase-grid">
+        <div class="showcase-card">
+          <img src="images/rovan_all_cleaning_services_poster.png" alt="بوستر عروض روفان كلين سرفيس">
+          <div class="showcase-info">
+            <h3>عروض وباقات الموسم الحصرية</h3>
+            <p>خصومات فورية عند حجز خدمات متعددة للفلل والشركات والمنازل مع جلي الرخام.</p>
+            <a href="tel:01507110429" class="btn-cta btn-call-gold" style="width:100%; justify-content:center; padding:11px;"><i class="fa-solid fa-phone"></i> اطلب العرض الآن</a>
+          </div>
+        </div>
+
+        <div class="showcase-card">
+          <img src="images/tanzef-alzgag.png" alt="تنظيف واجهات الزجاج - روفان كلين">
+          <div class="showcase-info">
+            <h3>تنظيف واجهات الزجاج والكلادينج</h3>
+            <p>فريق محترف لتنظيف واجهات المباني الزجاجية للأبراج والشركات بأحدث أوناش الأمان.</p>
+            <a href="https://wa.me/201507110429?text=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA" target="_blank" class="btn-cta btn-whatsapp-blue" style="width:100%; justify-content:center; padding:11px;"><i class="fa-brands fa-whatsapp"></i> استفسر عن الواجهات</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why-section container">
+    <div class="section-head">
+      <span class="sub">لماذا روفان كلين؟</span>
+      <h2>لماذا نحن <span>الخيار الأفضل</span> دائماً؟</h2>
+      <p>نحرص على تطبيق أعلى معايير الجودة والالتزام التام بالمواعيد لضمان راحة بالك ورضاك التام.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon"><i class="fa-solid fa-user-shield"></i></div>
+        <h3>عمالة محترفة وأمينة</h3>
+        <p>فريق عمل مدرب وموثوق يتمتع بالأمانة والدقة والاحترافية في إنجاز كافة تفاصيل التنظيف.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon"><i class="fa-solid fa-gears"></i></div>
+        <h3>معدات ألمانية وإيطالية</h3>
+        <p>أحدث ماكينات جلي الرخام، تنظيف السيراميك، وأجهزة استخلاص البخار الساخن المتطورة.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+        <h3>خامات أصلية آمنة 100%</h3>
+        <p>مواد تنظيف وتطهير معتمدة بدون روائح نفاذة وآمنة تماماً على الأطفال والحيوانات الأليفة.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon"><i class="fa-solid fa-tags"></i></div>
+        <h3>أسعار تنافسية وضمان</h3>
+        <p>أفضل باقات الأسعار التنافسية بالقاهرة مع ضمان شامل على كافة الخدمات المقدمة.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Areas -->
+  <section class="areas-section">
+    <div class="container">
+      <div class="section-head" style="margin-top:0;">
+        <span class="sub">نطاق التغطية</span>
+        <h2>نخدم جميع مناطق <span>القاهرة الكبرى والجيزة</span></h2>
+        <p>فريقنا مجهز للوصول إليك في أسرع وقت أينما كنت بسيارات مجهزة بالكامل.</p>
+      </div>
+
+      <div class="areas-tags">
+        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> التجمع الخامس</div>
+        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> القاهرة الجديدة</div>
+        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> مدينتي والرحاب</div>
+        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> الشروق وبدر</div>
+        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> مدينة نصر</div>
+        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> مصر الجديدة</div>
+        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> المعادي والمقطم</div>
+        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> الشيخ زايد</div>
+        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> 6 أكتوبر</div>
+        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> الدقي والمهندسين</div>
+        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> الهرم وفيصل</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fast Booking Banner -->
+  <section class="container">
+    <div class="cta-banner">
+      <h2>جاهز للحصول على أعلى مستوى نظافة لمنزلك أو شركتك؟</h2>
+      <p>تواصل مع فريق شركة روفان كلين سرفيس الآن وتمتع بأفضل الخصومات والعروض الفورية.</p>
+      <div style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
+        <a href="tel:01507110429" class="btn-cta btn-call-gold"><i class="fa-solid fa-phone"></i> اتصل فوراً: 01507110429</a>
+        <a href="https://wa.me/201507110429?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D9%85%D8%B9%20%D8%B1%D9%88%D9%81%D8%A7%D9%86%20%D9%83%D9%84%D9%8A%D9%86" target="_blank" class="btn-cta btn-whatsapp-blue"><i class="fa-brands fa-whatsapp"></i> احجز عبر واتساب</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Quick Contact Buttons -->
+  <div class="floating-actions">
+    <a href="https://wa.me/201507110429?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%B1%D9%88%D9%81%D8%A7%D9%86%20%D9%83%D9%84%D9%8A%D9%86" target="_blank" class="float-circle float-wa" title="تواصل معنا عبر واتساب">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:01507110429" class="float-circle float-phone" title="اتصل بنا الآن">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-brand">شركة روفان كلين سرفيس</div>
+      <p>الرائدة في خدمات النظافة المتكاملة، جلي الرخام، تنظيف بعد التشطيب، ومكافحة الحشرات في القاهرة والجيزة</p>
+      <div class="footer-phone-box">
+        للحجز والاستفسار: <a href="tel:01507110429">01507110429</a>
+      </div>
+      <div class="copy">
+        جميع الحقوق محفوظة &copy; 2026 شركة روفان كلين سرفيس - افضل شركة تنظيف منازل وشركات بالقاهرة
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
