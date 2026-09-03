@@ -25,7 +25,7 @@
     gtag('config', 'AW-18406969021');
   </script>
   
-    <!-- Best Advanced SEO Meta Tags -->
+  <!-- Best Advanced SEO Meta Tags -->
   <title>شركة روفان كلين سرفيس | افضل شركة تنظيف منازل وشركات بالقاهرة والجيزة 01507110429</title>
   <link rel="canonical" href="https://rovancleanservice.com/">
   <meta name="description" content="افضل شركة تنظيف منازل وشركات بالقاهرة والجيزة - شركة روفان كلين سرفيس. متخصصون في تنظيف بعد التشطيب، جلي وتلميع الرخام، تنظيف عميق، تنظيف المطابخ، تنظيف الفلل والقصور، تنظيف السيراميك شديد الاتساخ، والمخازن بأحدث الأجهزة 01507110429.">
@@ -112,6 +112,11 @@
       --card-gradient: linear-gradient(180deg, #0d1527 0%, #060a14 100%);
     }
 
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -190,12 +195,13 @@
     }
 
     .nav-container {
-      max-width: 1200px;
+      max-width: 1250px;
       margin: 0 auto;
-      padding: 12px 20px;
+      padding: 10px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 15px;
     }
 
     .brand-box {
@@ -206,21 +212,21 @@
     }
 
     .brand-icon {
-      width: 46px;
-      height: 46px;
+      width: 44px;
+      height: 44px;
       border-radius: 12px;
       background: var(--blue-gradient);
       display: flex;
       align-items: center;
       justify-content: center;
       color: #fff;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       box-shadow: 0 0 15px rgba(37, 99, 235, 0.6);
       border: 1.5px solid var(--gold-primary);
     }
 
-    .brand-text h1 {
-      font-size: 1.4rem;
+    .brand-text h2 {
+      font-size: 1.25rem;
       font-weight: 900;
       background: var(--gold-gradient);
       -webkit-background-clip: text;
@@ -230,10 +236,124 @@
     }
 
     .brand-text span {
-      font-size: 0.78rem;
+      font-size: 0.75rem;
       color: var(--blue-light);
       font-weight: 700;
       letter-spacing: 0.5px;
+    }
+
+    /* Main Navigation Bar & Dropdown */
+    .nav-menu {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-list {
+      display: flex;
+      list-style: none;
+      gap: 12px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-item {
+      position: relative;
+    }
+
+    .nav-link {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 8px 14px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.25s ease;
+    }
+
+    .nav-link:hover, 
+    .nav-item.dropdown:hover > .nav-link {
+      color: var(--gold-light);
+      background: rgba(212, 175, 55, 0.12);
+    }
+
+    .nav-link i.arrow {
+      font-size: 0.75rem;
+      transition: transform 0.3s ease;
+    }
+
+    .nav-item.dropdown:hover .nav-link i.arrow {
+      transform: rotate(180deg);
+    }
+
+    /* Dropdown Menu */
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: rgba(9, 14, 26, 0.98);
+      border: 1.5px solid var(--gold-primary);
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.9), 0 0 15px var(--blue-glow);
+      min-width: 240px;
+      padding: 8px 0;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(12px);
+      transition: all 0.25s ease;
+      list-style: none;
+      z-index: 1000;
+      backdrop-filter: blur(12px);
+    }
+
+    .nav-item.dropdown:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .dropdown-menu li a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 18px;
+      color: #e2e8f0;
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 700;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      transition: 0.2s ease;
+    }
+
+    .dropdown-menu li:last-child a {
+      border-bottom: none;
+    }
+
+    .dropdown-menu li a i {
+      color: var(--gold-primary);
+      font-size: 0.9rem;
+      width: 18px;
+      text-align: center;
+    }
+
+    .dropdown-menu li a:hover {
+      background: rgba(212, 175, 55, 0.15);
+      color: var(--gold-light);
+      padding-right: 22px;
+    }
+
+    .mobile-menu-toggle {
+      display: none;
+      background: transparent;
+      border: 1.5px solid var(--gold-primary);
+      color: var(--gold-light);
+      padding: 7px 12px;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      cursor: pointer;
     }
 
     .header-btns {
@@ -245,15 +365,16 @@
       background: var(--gold-gradient);
       color: #04070d;
       font-weight: 900;
-      padding: 9px 22px;
+      padding: 8px 18px;
       border-radius: 30px;
       text-decoration: none;
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       display: inline-flex;
       align-items: center;
       gap: 8px;
       transition: all 0.3s ease;
       box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+      white-space: nowrap;
     }
 
     .btn-header-call:hover {
@@ -756,7 +877,7 @@
       color: var(--blue-light);
     }
 
-    /* CTA Fast Booking Banner */
+    /* CTA Fast Booking Banner (المصحح بدون وسوم مكسورة) */
     .cta-banner {
       background: linear-gradient(135deg, #090e1a 0%, #0e172a 50%, #04070d 100%);
       border: 2px solid var(--gold-primary);
@@ -779,6 +900,132 @@
       color: #cbd5e1;
       font-size: 1.18rem;
       margin-bottom: 30px;
+    }
+
+    /* Bottom Showcase Section */
+    .bottom-showcase-section {
+      background: #070c18;
+      padding: 70px 0;
+      border-top: 2px solid var(--gold-dark);
+    }
+
+    .bottom-images-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 35px;
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+
+    .bottom-img-card {
+      background: var(--card-gradient);
+      border: 1.5px solid var(--gold-primary);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.8);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bottom-img-wrap {
+      width: 100%;
+      height: 280px;
+      background: #020408;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .bottom-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .bottom-img-card:hover .bottom-img-wrap img {
+      transform: scale(1.05);
+    }
+
+    .bottom-img-content {
+      padding: 28px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .bottom-img-content h3 {
+      font-size: 1.45rem;
+      color: var(--gold-light);
+      margin-bottom: 12px;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .bottom-img-content h3 i {
+      color: var(--blue-light);
+    }
+
+    .bottom-img-content p {
+      color: #cbd5e1;
+      font-size: 1.02rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    /* SEO Keywords Section */
+    .seo-keywords-section {
+      background: #04070d;
+      padding: 60px 20px;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+    }
+
+    .seo-keywords-container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .seo-keywords-container h3 {
+      font-size: 1.5rem;
+      color: var(--gold-light);
+      margin-bottom: 15px;
+      font-weight: 900;
+    }
+
+    .seo-keywords-container p {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      margin-bottom: 25px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .keywords-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .keyword-tag {
+      background: rgba(37, 99, 235, 0.1);
+      border: 1px solid rgba(37, 99, 235, 0.3);
+      color: var(--blue-light);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+
+    .keyword-tag:hover {
+      background: var(--blue-electric);
+      color: #fff;
+      border-color: var(--gold-primary);
     }
 
     /* Floating Quick Buttons */
@@ -872,14 +1119,58 @@
       margin-top: 25px;
     }
 
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+      .mobile-menu-toggle {
+        display: block;
+      }
+      .nav-menu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: rgba(4, 7, 13, 0.98);
+        border-bottom: 2px solid var(--gold-primary);
+        padding: 15px 20px;
+        display: none;
+      }
+      .nav-menu.active {
+        display: block;
+      }
+      .nav-list {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+      }
+      .nav-link {
+        justify-content: space-between;
+        padding: 12px 16px;
+        background: rgba(255, 255, 255, 0.03);
+      }
+      .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        background: rgba(14, 23, 42, 0.8);
+        border: 1px solid var(--border-color);
+        margin-top: 6px;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        display: none;
+      }
+      .nav-item.dropdown.open .dropdown-menu {
+        display: block;
+      }
+    }
+
     @media (max-width: 768px) {
       .hero h1 { font-size: 1.85rem; }
       .hero p { font-size: 1.05rem; }
       .top-bar { justify-content: center; text-align: center; }
       .section-head h2 { font-size: 1.75rem; }
       .services-grid { grid-template-columns: 1fr; }
-      .brand-text h1 { font-size: 1.15rem; }
-      .btn-header-call { padding: 7px 15px; font-size: 0.88rem; }
+      .brand-text h2 { font-size: 1.1rem; }
+      .btn-header-call { padding: 6px 14px; font-size: 0.85rem; }
     }
   </style>
 </head>
@@ -896,17 +1187,51 @@
     </div>
   </div>
 
-  <!-- Header -->
+  <!-- Header مع شريط المهام والقائمة المنسدلة -->
   <header>
     <div class="nav-container">
       <a href="#" class="brand-box">
         <div class="brand-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
         <div class="brand-text">
-          <h1>شركة روفان كلين سرفيس</h1>
+          <h2>شركة روفان كلين سرفيس</h2>
           <span>افضل شركة تنظيف منازل وشركات - 01507110429</span>
         </div>
       </a>
+
+      <!-- شريط المهام -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item dropdown" id="servicesDropdown">
+            <a href="#services" class="nav-link">
+              <span>خدماتنا</span>
+              <i class="fa-solid fa-chevron-down arrow"></i>
+            </a>
+            <!-- القائمة المنسدلة للخدمات -->
+            <ul class="dropdown-menu">
+              <li><a href="#service-home"><i class="fa-solid fa-house"></i> تنظيف عادي للمنازل</a></li>
+              <li><a href="#service-tashteb"><i class="fa-solid fa-paint-roller"></i> تنظيف بعد التشطيب</a></li>
+              <li><a href="#service-deep"><i class="fa-solid fa-sparkles"></i> تنظيف عميق</a></li>
+              <li><a href="#service-marble"><i class="fa-solid fa-gem"></i> جلي وتلميع الرخام</a></li>
+              <li><a href="#service-kitchen"><i class="fa-solid fa-utensils"></i> تنظيف المطابخ</a></li>
+              <li><a href="#service-upholstery"><i class="fa-solid fa-couch"></i> تنظيف المفروشات</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#gallery" class="nav-link">معرضنا</a>
+          </li>
+          <li class="nav-item">
+            <a href="#why-us" class="nav-link">لماذا نحن الافضل</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">تواصل معانا</a>
+          </li>
+        </ul>
+      </nav>
+
       <div class="header-btns">
+        <button class="mobile-menu-toggle" id="menuToggle" aria-label="القائمة">
+          <i class="fa-solid fa-bars"></i>
+        </button>
         <a href="tel:01507110429" class="btn-header-call">
           <i class="fa-solid fa-phone"></i> اتصل الآن
         </a>
@@ -973,14 +1298,14 @@
 
     <div class="services-grid">
 
-      <!-- 1. تنظيف المنازل -->
-      <article class="service-card">
+      <!-- 1. تنظيف عادي للمنازل -->
+      <article class="service-card" id="service-home">
         <div class="service-img-wrap">
-          <img src="images/tanzef-ade.png" alt="تنظيف المنازل - شركة روفان كلين سرفيس">
+          <img src="images/tanzef-ade.png" alt="تنظيف عادي للمنازل - شركة روفان كلين سرفيس">
           <span class="service-badge">الخدمة الأساسية</span>
         </div>
         <div class="service-body">
-          <h3><i class="fa-solid fa-house"></i> 1. تنظيف المنازل</h3>
+          <h3><i class="fa-solid fa-house"></i> 1. تنظيف عادي للمنازل</h3>
           <p>
             خدمة شاملة لنظافة المنازل والشقق السكنية: كنس ومسح الأرضيات، إزالة الأتربة، تلميع الأثاث والزجاج، وترتيب الغرف وتعقيم الحمامات لبيئة منزلية نقية ومريحة.
           </p>
@@ -997,9 +1322,9 @@
       </article>
 
       <!-- 2. تنظيف بعد التشطيب -->
-      <article class="service-card">
+      <article class="service-card" id="service-tashteb">
         <div class="service-img-wrap">
-          <img src="images/tanzef-bad-altashteb .png" alt="تنظيف بعد التشطيب - روفان كلين">
+          <img src="images/tanzef-bad-altashteb.png" alt="تنظيف بعد التشطيب - روفان كلين">
           <span class="service-badge">تجهيز فوري للسكن</span>
         </div>
         <div class="service-body">
@@ -1020,7 +1345,7 @@
       </article>
 
       <!-- 3. جلي وتلميع الرخام -->
-      <article class="service-card">
+      <article class="service-card" id="service-marble">
         <div class="service-img-wrap">
           <img src="images/galy-rkham.png" alt="جلي وتلميع الرخام - روفان كلين سرفيس">
           <span class="service-badge">أقراص الكريستال الإيطالي</span>
@@ -1043,7 +1368,7 @@
       </article>
 
       <!-- 4. تنظيف عميق للمنازل -->
-      <article class="service-card">
+      <article class="service-card" id="service-deep">
         <div class="service-img-wrap">
           <img src="images/tanzef-amek.png" alt="تنظيف عميق للمنازل - روفان كلين سرفيس">
           <span class="service-badge">عناية فائقة وتطهير</span>
@@ -1066,7 +1391,7 @@
       </article>
 
       <!-- 5. تنظيف المطابخ -->
-      <article class="service-card">
+      <article class="service-card" id="service-kitchen">
         <div class="service-img-wrap">
           <img src="images/kitchencleaning.png" alt="تنظيف المطابخ وإذابة الدهون - روفان كلين">
           <span class="service-badge">إذابة أصعب الدهون</span>
@@ -1089,7 +1414,7 @@
       </article>
 
       <!-- 6. تنظيف الشركات والمكاتب -->
-      <article class="service-card">
+      <article class="service-card" id="service-offices">
         <div class="service-img-wrap">
           <img src="images/tanzefshrekat.png" alt="تنظيف الشركات والمكاتب - روفان كلين">
           <span class="service-badge">عقود دورية مخصصة</span>
@@ -1112,7 +1437,7 @@
       </article>
 
       <!-- 7. تنظيف الفلل والقصور -->
-      <article class="service-card">
+      <article class="service-card" id="service-villas">
         <div class="service-img-wrap">
           <img src="images/fallal-kosor.png" alt="تنظيف الفلل والقصور - روفان كلين سرفيس">
           <span class="service-badge">مساحات كبرى وأطقم ضخمة</span>
@@ -1135,7 +1460,7 @@
       </article>
 
       <!-- 8. تنظيف السراميك شديد الاتساخ -->
-      <article class="service-card">
+      <article class="service-card" id="service-ceramics">
         <div class="service-img-wrap">
           <img src="images/tanzef-alsramek.png" alt="تنظيف السراميك شديد الاتساخ والبورسلين - روفان كلين">
           <span class="service-badge">تفتيح الفواصل والتلميع</span>
@@ -1158,7 +1483,7 @@
       </article>
 
       <!-- 9. تنظيف المخازن -->
-      <article class="service-card">
+      <article class="service-card" id="service-warehouse">
         <div class="service-img-wrap">
           <img src="images/mhazen.png" alt="تنظيف المخازن والمستودعات - روفان كلين سرفيس">
           <span class="service-badge">حلول صناعية وتجارية</span>
@@ -1180,25 +1505,25 @@
         </div>
       </article>
 
-      <!-- 10. تنظيف يومي -->
-      <article class="service-card">
+      <!-- 10. تنظيف المفروشات والكنب -->
+      <article class="service-card" id="service-upholstery">
         <div class="service-img-wrap">
-          <img src="images/kanb.png" alt="تنظيف يومي ودوري للمفروشات والكنب - روفان كلين">
-          <span class="service-badge">اشتراكات وزيارات دورية</span>
+          <img src="images/kanb.png" alt="تنظيف المفروشات والكنب - روفان كلين">
+          <span class="service-badge">غسيل بالبخار واشتراكات</span>
         </div>
         <div class="service-body">
-          <h3><i class="fa-solid fa-calendar-check"></i> 10. تنظيف يومي ودوري</h3>
+          <h3><i class="fa-solid fa-couch"></i> 10. تنظيف المفروشات والكنب</h3>
           <p>
-            باقات نظافة يومية ودورية منتظمة للمنازل والعيادات والمكاتب بأوقات مرنة، تشمل الترتيب، كنس الأرضيات، تعقيم الأسطح، وغسيل الكنب والمفروشات لراحة مستمرة.
+            غسيل وتعقيم عميق لكافة أنواع المفروشات، الكنب، الصالونات، المراتب، والستائر بالبخار الساخن لإزالة البقع المستعصية والروائح الكريهة وتوفير باقات نظافة دورية.
           </p>
           <ul class="service-specs">
-            <li><i class="fa-solid fa-check-circle"></i> زيارات منتظمة وفق جدولك المناسب</li>
-            <li><i class="fa-solid fa-check-circle"></i> تعقيم المفروشات والكنب ضد البكتيريا</li>
-            <li><i class="fa-solid fa-check-circle"></i> أسعار وباقات اشتراك مخفضة وعادلة</li>
+            <li><i class="fa-solid fa-check-circle"></i> استخلاص البقع الصعبة دون التأثير على الأقمشة</li>
+            <li><i class="fa-solid fa-check-circle"></i> تعقيم بالبخار بدرجة حرارة تقضي على الجراثيم</li>
+            <li><i class="fa-solid fa-check-circle"></i> تجفيف سريع ومواد تعطير فندقية فاخرة</li>
           </ul>
           <div class="card-actions">
             <a href="tel:01507110429" class="btn-card-call"><i class="fa-solid fa-phone"></i> اتصال</a>
-            <a href="https://wa.me/201507110429?text=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A8%D8%A7%D9%82%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D9%8A%D9%88%D9%85%D9%8A" target="_blank" class="btn-card-wa"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+            <a href="https://wa.me/201507110429?text=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D9%85%D9%81%D8%B1%D9%88%D8%B4%D8%A7%D8%AA" target="_blank" class="btn-card-wa"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
           </div>
         </div>
       </article>
@@ -1226,7 +1551,7 @@
         </div>
       </article>
 
-      <!-- خدمات إضافية متخصصة (مكافحة الحشرات وواجهات الزجاج) -->
+      <!-- 12. مكافحة الحشرات وواجهات الزجاج -->
       <article class="service-card">
         <div class="service-img-wrap">
           <img src="images/mkafht-alhshrat.png" alt="مكافحة الحشرات ورش المبيدات - روفان كلين">
@@ -1252,11 +1577,11 @@
     </div>
   </main>
 
-  <!-- Showcase & Poster Section -->
-  <section class="showcase-section">
+  <!-- Showcase & Poster Section (معرضنا) -->
+  <section class="showcase-section" id="gallery">
     <div class="container">
       <div class="section-head" style="margin-top:0;">
-        <span class="sub">عروض حصرية</span>
+        <span class="sub">معرض أعمالنا وعروضنا الحصرية</span>
         <h2>كتالوج وبوسترات <span>روفان كلين سرفيس</span></h2>
         <p>عروض وخصومات مميزة على جميع خدمات النظافة والتعقيم بمناسبة الموسم.</p>
       </div>
@@ -1283,8 +1608,8 @@
     </div>
   </section>
 
-  <!-- Why Choose Us -->
-  <section class="why-section container">
+  <!-- Why Choose Us (لماذا نحن الأفضل) -->
+  <section class="why-section container" id="why-us">
     <div class="section-head">
       <span class="sub">لماذا روفان كلين؟</span>
       <h2>لماذا نحن <span>الخيار الأفضل</span> دائماً؟</h2>
@@ -1318,7 +1643,7 @@
     </div>
   </section>
 
-  <!-- Service Areas (نطاق التغطية المحدث) -->
+  <!-- Service Areas (نطاق التغطية المحدث بالكامل) -->
   <section class="areas-section">
     <div class="container">
       <div class="section-head" style="margin-top:0;">
@@ -1361,14 +1686,19 @@
     </div>
   </section>
 
-  <a href="https://wa.me/201507110429?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%A7%D9%84%D8%AA%D9%86%D8%B8%D9%8A%D9%81" target="_blank" class="btn-cta btn-whatsapp-blue"><i class="fa-brands fa-whatsapp"></i> احجز عبر واتساب</a>
+  <!-- CTA Banner المصحح هندسياً -->
+  <section class="container" id="fast-booking">
+    <div class="cta-banner">
+      <h2>احصل على نظافة مثالية لمنزلك أو شركتك اليوم</h2>
+      <p>فريقنا متاح طوال 24 ساعة بأحدث الماكينات وأفضل الخامات لتسليم وحدتك بأعلى درجات الرضا والضمان.</p>
+      <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+        <a href="tel:01507110429" class="btn-cta btn-call-gold"><i class="fa-solid fa-phone-volume"></i> اتصل للحجز: 01507110429</a>
+        <a href="https://wa.me/201507110429?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%A7%D9%84%D8%AA%D9%86%D8%B8%D9%8A%D9%81" target="_blank" class="btn-cta btn-whatsapp-blue"><i class="fa-brands fa-whatsapp"></i> احجز عبر واتساب</a>
       </div>
     </div>
   </section>
 
-  <!-- ========================================== -->
-  <!-- قسم الصور الجديدة وفيديو اليوتيوب والشرح   -->
-  <!-- ========================================== -->
+  <!-- قسم الصور التوضيحية وفيديو اليوتيوب -->
   <section class="bottom-showcase-section">
     <div class="container">
       <div class="section-head" style="margin-top:0;">
@@ -1429,9 +1759,7 @@
     </div>
   </section>
 
-  <!-- ========================================== -->
-  <!-- قسم الكلمات الدلالية لتقوية الـ SEO في النهاية -->
-  <!-- ========================================== -->
+  <!-- قسم الكلمات الدلالية لتقوية الـ SEO -->
   <section class="seo-keywords-section">
     <div class="seo-keywords-container">
       <h3>دليلك الشامل لخدمات النظافة والتعقيم في مصر</h3>
@@ -1439,7 +1767,7 @@
       
       <div class="keywords-cloud">
         <span class="keyword-tag">افضل شركة تنظيف منازل بالقاهرة</span>
-        <span class="keyword-tag">شركة تنظيف شقق بعد بالتشطيب</span>
+        <span class="keyword-tag">شركة تنظيف شقق بعد التشطيب</span>
         <span class="keyword-tag">أرخص شركة تنظيف في 6 أكتوبر</span>
         <span class="keyword-tag">شركة جلي وتلميع الرخام بالكريستال</span>
         <span class="keyword-tag">تنظيف الفلل والقصور بالتجمع الخامس</span>
@@ -1457,120 +1785,9 @@
     </div>
   </section>
 
-  <!-- تزويد الـ CSS الخاص بالصور والكروت الجديدة (في حال لم يكن موجوداً مسبقاً) -->
-  <style>
-    .bottom-showcase-section {
-      background: #070c18;
-      padding: 70px 0;
-      border-top: 2px solid var(--gold-dark);
-    }
-    .bottom-images-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      gap: 35px;
-      max-width: 1150px;
-      margin: 0 auto;
-    }
-    .bottom-img-card {
-      background: var(--card-gradient);
-      border: 1.5px solid var(--gold-primary);
-      border-radius: 22px;
-      overflow: hidden;
-      box-shadow: 0 10px 35px rgba(0,0,0,0.8);
-      display: flex;
-      flex-direction: column;
-    }
-    .bottom-img-wrap {
-      width: 100%;
-      height: 280px;
-      background: #020408;
-      overflow: hidden;
-      border-bottom: 1px solid var(--border-color);
-    }
-    .bottom-img-wrap img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.4s ease;
-    }
-    .bottom-img-card:hover .bottom-img-wrap img {
-      transform: scale(1.05);
-    }
-    .bottom-img-content {
-      padding: 28px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .bottom-img-content h3 {
-      font-size: 1.45rem;
-      color: var(--gold-light);
-      margin-bottom: 12px;
-      font-weight: 900;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .bottom-img-content h3 i {
-      color: var(--blue-light);
-    }
-    .bottom-img-content p {
-      color: #cbd5e1;
-      font-size: 1.02rem;
-      line-height: 1.8;
-      margin-bottom: 20px;
-    }
-    .seo-keywords-section {
-      background: #04070d;
-      padding: 60px 20px;
-      border-top: 1px solid var(--border-color);
-      text-align: center;
-    }
-    .seo-keywords-container {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .seo-keywords-container h3 {
-      font-size: 1.5rem;
-      color: var(--gold-light);
-      margin-bottom: 15px;
-      font-weight: 900;
-    }
-    .seo-keywords-container p {
-      color: var(--text-muted);
-      font-size: 0.98rem;
-      margin-bottom: 25px;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .keywords-cloud {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-    }
-    .keyword-tag {
-      background: rgba(37, 99, 235, 0.1);
-      border: 1px solid rgba(37, 99, 235, 0.3);
-      color: var(--blue-light);
-      padding: 8px 16px;
-      border-radius: 20px;
-      font-size: 0.88rem;
-      font-weight: 700;
-      transition: 0.3s;
-    }
-    .keyword-tag:hover {
-      background: var(--blue-electric);
-      color: #fff;
-      border-color: var(--gold-primary);
-    }
-  </style>
-
   <!-- Floating Quick Buttons -->
   <div class="floating-actions">
-    <a href="https://wa.me/201507110429?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%86%D8%B8%D9%8A%D9%81" target="_blank" class="float-circle float-wa" aria-label="WhatsApp">
+    <a href="https://wa.me/201507110429?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%A7%D9%84%D8%AA%D9%86%D8%B8%D9%8A%D9%81" target="_blank" class="float-circle float-wa" aria-label="WhatsApp">
       <i class="fa-brands fa-whatsapp"></i>
     </a>
     <a href="tel:01507110429" class="float-circle float-phone" aria-label="Phone Call">
@@ -1578,8 +1795,8 @@
     </a>
   </div>
 
-  <!-- Footer -->
-  <footer>
+  <!-- Footer (تواصل معانا) -->
+  <footer id="contact">
     <div class="container">
       <div class="footer-brand">شركة روفان كلين سرفيس</div>
       <p>الرائدون في خدمات النظافة المتكاملة، جلي الرخام، وتعقيم المنازل والشركات في مصر.</p>
@@ -1591,6 +1808,35 @@
       </div>
     </div>
   </footer>
+
+  <!-- كود تشغيل القائمة على شاشات الموبايل -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+    const servicesDropdown = document.getElementById('servicesDropdown');
+
+    if (menuToggle && navMenu) {
+      menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+      });
+    }
+
+    if (servicesDropdown) {
+      servicesDropdown.addEventListener('click', (e) => {
+        if (window.innerWidth <= 992) {
+          servicesDropdown.classList.toggle('open');
+        }
+      });
+    }
+
+    document.querySelectorAll('.dropdown-menu a, .nav-item:not(.dropdown) a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 992 && navMenu) {
+          navMenu.classList.remove('active');
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
