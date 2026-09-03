@@ -58,40 +58,54 @@
   <meta property="og:locale" content="ar_EG">
   <meta property="og:site_name" content="شركة روفان كلين سرفيس">
 
-  <!-- Schema.org JSON-LD Structured Data for Local Business -->
+  <!-- Schema.org JSON-LD Structured Data for WebSite Name & Local Business -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
-    "name": "شركة روفان كلين سرفيس - افضل شركة تنظيف منازل وشركات",
-    "image": "https://rovancleanservice.com/images/wagha.png",
-    "telephone": "+201507110429",
-    "priceRange": "EGP",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "القاهرة",
-      "addressRegion": "القاهرة والجيزة",
-      "addressCountry": "EG"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "30.0444",
-      "longitude": "31.2357"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-      "opens": "00:00",
-      "closes": "23:59"
-    },
-    "areaServed": [
-      "محافظة القاهرة", "محافظة الجيزة", "مدينة 6 أكتوبر", "حدائق أكتوبر", "الشيخ زايد", 
-      "التجمع الخامس", "القاهرة الجديدة", "الرحاب", "مدينتي", "مدينة نصر", "زهراء مدينة نصر", 
-      "مصر الجديدة", "المعادي", "زهراء المعادي", "المقطم", "وسط البلد", "عابدين", 
-      "البساتين", "دار السلام", "الدقي", "المهندسين", "الهرم", "فيصل", 
-      "الشروق", "مدينة بدر", "مدينة السلام"
-    ],
-    "description": "أفضل شركة تنظيف منازل وشركات وفلل وتنظيف ما بعد التشطيب وجلي الرخام في القاهرة والجيزة."
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://rovancleanservice.com/#website",
+        "url": "https://rovancleanservice.com/",
+        "name": "شركة روفان كلين سرفيس",
+        "alternateName": ["روفان كلين سرفيس", "Rovan Clean Service"],
+        "inLanguage": "ar"
+      },
+      {
+        "@type": "HomeAndConstructionBusiness",
+        "@id": "https://rovancleanservice.com/#business",
+        "name": "شركة روفان كلين سرفيس - افضل شركة تنظيف منازل وشركات",
+        "url": "https://rovancleanservice.com/",
+        "image": "https://rovancleanservice.com/images/wagha.png",
+        "telephone": "+201507110429",
+        "priceRange": "EGP",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "القاهرة",
+          "addressRegion": "القاهرة والجيزة",
+          "addressCountry": "EG"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "30.0444",
+          "longitude": "31.2357"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
+        },
+        "areaServed": [
+          "محافظة القاهرة", "محافظة الجيزة", "مدينة 6 أكتوبر", "حدائق أكتوبر", "الشيخ زايد", 
+          "التجمع الخامس", "القاهرة الجديدة", "الرحاب", "مدينتي", "مدينة نصر", "زهراء مدينة نصر", 
+          "مصر الجديدة", "المعادي", "زهراء المعادي", "المقطم", "وسط البلد", "عابدين", 
+          "البساتين", "دار السلام", "الدقي", "المهندسين", "الهرم", "فيصل", 
+          "الشروق", "مدينة بدر", "مدينة السلام"
+        ],
+        "description": "أفضل شركة تنظيف منازل وشركات وفلل وتنظيف ما بعد التشطيب وجلي الرخام في القاهرة والجيزة."
+      }
+    ]
   }
   </script>
   
