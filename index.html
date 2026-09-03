@@ -7,22 +7,35 @@
   <!-- Google Search Console Verification Meta Tag -->
   <meta name="google-site-verification" content="ymcAXd-4zfBY-Wlf6jnLgDMW-VdcTdC8_xOny-Z3J1Y" />
   
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7B2Q5WBGK"></script>
+  <!-- LCP Preload for Hero Image -->
+  <link rel="preload" as="image" href="images/wagha.png" fetchpriority="high">
+
+  <!-- Deferred Google Tags to Speed up Initial Render -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-Q7B2Q5WBGK');
-  </script>
-  
-  <!-- Google tag (gtag.js) - Google Ads -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18406969021"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-18406969021');
+
+    function loadTrackingScripts() {
+      const gtmScript = document.createElement('script');
+      gtmScript.src = "https://www.googletagmanager.com/gtag/js?id=G-Q7B2Q5WBGK";
+      gtmScript.async = true;
+      document.head.appendChild(gtmScript);
+
+      const adsScript = document.createElement('script');
+      adsScript.src = "https://www.googletagmanager.com/gtag/js?id=AW-18406969021";
+      adsScript.async = true;
+      document.head.appendChild(adsScript);
+
+      gtag('config', 'G-Q7B2Q5WBGK');
+      gtag('config', 'AW-18406969021');
+    }
+
+    if (window.requestIdleCallback) {
+      window.requestIdleCallback(loadTrackingScripts, { timeout: 2500 });
+    } else {
+      window.addEventListener('load', loadTrackingScripts);
+    }
   </script>
   
   <!-- Best Advanced SEO Meta Tags -->
@@ -82,15 +95,15 @@
   }
   </script>
   
-  <!-- Google Fonts: Cairo -->
+  <!-- Non-blocking Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
 
   <style>
-    /* Premium Black, Gold & Royal Blue Theme Palette */
     :root {
       --bg-black: #04070d;
       --bg-card: #090e1a;
@@ -242,7 +255,6 @@
       letter-spacing: 0.5px;
     }
 
-    /* Main Navigation Bar & Dropdown */
     .nav-menu {
       display: flex;
       align-items: center;
@@ -289,7 +301,6 @@
       transform: rotate(180deg);
     }
 
-    /* Dropdown Menu */
     .dropdown-menu {
       position: absolute;
       top: 100%;
@@ -490,11 +501,14 @@
       overflow: hidden;
       box-shadow: 0 14px 40px rgba(0,0,0,0.95), 0 0 25px rgba(37, 99, 235, 0.35);
       border: 2px solid var(--gold-primary);
+      aspect-ratio: 16 / 9;
+      background: #060a14;
     }
 
     .hero-banner-frame img {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
       display: block;
     }
 
@@ -528,7 +542,7 @@
       font-weight: 700;
     }
 
-    /* Main Container & Section Titles */
+    /* Main Container & Titles */
     .container {
       max-width: 1200px;
       margin: 0 auto;
@@ -877,7 +891,7 @@
       color: var(--blue-light);
     }
 
-    /* CTA Fast Booking Banner (المصحح بدون وسوم مكسورة) */
+    /* CTA Fast Booking Banner */
     .cta-banner {
       background: linear-gradient(135deg, #090e1a 0%, #0e172a 50%, #04070d 100%);
       border: 2px solid var(--gold-primary);
@@ -973,6 +987,54 @@
       font-size: 1.02rem;
       line-height: 1.8;
       margin-bottom: 20px;
+    }
+
+    /* Fast Facade YouTube Container */
+    .video-facade-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      background: #000;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .video-facade-container img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.85;
+      transition: opacity 0.3s ease;
+    }
+
+    .video-facade-container:hover img {
+      opacity: 1;
+    }
+
+    .play-btn-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70px;
+      height: 70px;
+      background: rgba(212, 175, 55, 0.9);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #04070d;
+      font-size: 2rem;
+      box-shadow: 0 0 25px rgba(212, 175, 55, 0.75);
+      transition: all 0.3s ease;
+    }
+
+    .video-facade-container:hover .play-btn-overlay {
+      transform: translate(-50%, -50%) scale(1.15);
+      background: var(--gold-light);
     }
 
     /* SEO Keywords Section */
@@ -1119,7 +1181,6 @@
       margin-top: 25px;
     }
 
-    /* Responsive adjustments */
     @media (max-width: 992px) {
       .mobile-menu-toggle {
         display: block;
@@ -1187,7 +1248,7 @@
     </div>
   </div>
 
-  <!-- Header مع شريط المهام والقائمة المنسدلة -->
+  <!-- Header -->
   <header>
     <div class="nav-container">
       <a href="#" class="brand-box">
@@ -1206,7 +1267,6 @@
               <span>خدماتنا</span>
               <i class="fa-solid fa-chevron-down arrow"></i>
             </a>
-            <!-- القائمة المنسدلة للخدمات -->
             <ul class="dropdown-menu">
               <li><a href="#service-home"><i class="fa-solid fa-house"></i> تنظيف عادي للمنازل</a></li>
               <li><a href="#service-tashteb"><i class="fa-solid fa-paint-roller"></i> تنظيف بعد التشطيب</a></li>
@@ -1259,9 +1319,9 @@
         </a>
       </div>
 
-      <!-- Hero Showcase Image -->
+      <!-- Hero Image: Non-lazy + high priority for maximum LCP score -->
       <div class="hero-banner-frame">
-        <img src="images/wagha.png" alt="افضل شركة تنظيف منازل وشركات - شركة روفان كلين سرفيس">
+        <img src="images/wagha.png" alt="افضل شركة تنظيف منازل وشركات - شركة روفان كلين سرفيس" width="1000" height="562" fetchpriority="high">
       </div>
     </div>
   </section>
@@ -1301,7 +1361,7 @@
       <!-- 1. تنظيف عادي للمنازل -->
       <article class="service-card" id="service-home">
         <div class="service-img-wrap">
-          <img src="images/tanzef-ade.png" alt="تنظيف عادي للمنازل - شركة روفان كلين سرفيس">
+          <img src="images/tanzef-ade.png" alt="تنظيف عادي للمنازل - شركة روفان كلين سرفيس" loading="lazy" decoding="async" width="340" height="255">
           <span class="service-badge">الخدمة الأساسية</span>
         </div>
         <div class="service-body">
@@ -1324,7 +1384,7 @@
       <!-- 2. تنظيف بعد التشطيب -->
       <article class="service-card" id="service-tashteb">
         <div class="service-img-wrap">
-          <img src="images/tanzef-bad-altashteb.png" alt="تنظيف بعد التشطيب - روفان كلين">
+          <img src="images/tanzef-bad-altashteb.png" alt="تنظيف بعد التشطيب - روفان كلين" loading="lazy" decoding="async" width="340" height="255">
           <span class="service-badge">تجهيز فوري للسكن</span>
         </div>
         <div class="service-body">
@@ -1347,7 +1407,7 @@
       <!-- 3. جلي وتلميع الرخام -->
       <article class="service-card" id="service-marble">
         <div class="service-img-wrap">
-          <img src="images/galy-rkham.png" alt="جلي وتلميع الرخام - روفان كلين سرفيس">
+          <img src="images/galy-rkham.png" alt="جلي وتلميع الرخام - روفان كلين سرفيس" loading="lazy" decoding="async" width="340" height="255">
           <span class="service-badge">أقراص الكريستال الإيطالي</span>
         </div>
         <div class="service-body">
@@ -1370,7 +1430,7 @@
       <!-- 4. تنظيف عميق للمنازل -->
       <article class="service-card" id="service-deep">
         <div class="service-img-wrap">
-          <img src="images/tanzef-amek.png" alt="تنظيف عميق للمنازل - روفان كلين سرفيس">
+          <img src="images/tanzef-amek.png" alt="تنظيف عميق للمنازل - روفان كلين سرفيس" loading="lazy" decoding="async" width="340" height="255">
           <span class="service-badge">عناية فائقة وتطهير</span>
         </div>
         <div class="service-body">
@@ -1393,7 +1453,7 @@
       <!-- 5. تنظيف المطابخ -->
       <article class="service-card" id="service-kitchen">
         <div class="service-img-wrap">
-          <img src="images/kitchencleaning.png" alt="تنظيف المطابخ وإذابة الدهون - روفان كلين">
+          <img src="images/kitchencleaning.png" alt="تنظيف المطابخ وإذابة الدهون - روفان كلين" loading="lazy" decoding="async" width="340" height="255">
           <span class="service-badge">إذابة أصعب الدهون</span>
         </div>
         <div class="service-body">
@@ -1416,7 +1476,7 @@
       <!-- 6. تنظيف الشركات والمكاتب -->
       <article class="service-card" id="service-offices">
         <div class="service-img-wrap">
-          <img src="images/tanzefshrekat.png" alt="تنظيف الشركات والمكاتب - روفان كلين">
+          <img src="images/tanzefshrekat.png" alt="تنظيف الشركات والمكاتب - روفان كلين" loading="lazy" decoding="async" width="340" height="255">
           <span class="service-badge">عقود دورية مخصصة</span>
         </div>
         <div class="service-body">
@@ -1439,7 +1499,7 @@
       <!-- 7. تنظيف الفلل والقصور -->
       <article class="service-card" id="service-villas">
         <div class="service-img-wrap">
-          <img src="images/fallal-kosor.png" alt="تنظيف الفلل والقصور - روفان كلين سرفيس">
+          <img src="images/fallal-kosor.png" alt="تنظيف الفلل والقصور - روفان كلين سرفيس" loading="lazy" decoding="async" width="340" height="255">
           <span class="service-badge">مساحات كبرى وأطقم ضخمة</span>
         </div>
         <div class="service-body">
@@ -1462,7 +1522,7 @@
       <!-- 8. تنظيف السراميك شديد الاتساخ -->
       <article class="service-card" id="service-ceramics">
         <div class="service-img-wrap">
-          <img src="images/tanzef-alsramek.png" alt="تنظيف السراميك شديد الاتساخ والبورسلين - روفان كلين">
+          <img src="images/tanzef-alsramek.png" alt="تنظيف السراميك شديد الاتساخ والبورسلين - روفان كلين" loading="lazy" decoding="async" width="340" height="255">
           <span class="service-badge">تفتيح الفواصل والتلميع</span>
         </div>
         <div class="service-body">
@@ -1485,7 +1545,7 @@
       <!-- 9. تنظيف المخازن -->
       <article class="service-card" id="service-warehouse">
         <div class="service-img-wrap">
-          <img src="images/mhazen.png" alt="تنظيف المخازن والمستودعات - روفان كلين سرفيس">
+          <img src="images/mhazen.png" alt="تنظيف المخازن والمستودعات - روفان كلين سرفيس" loading="lazy" decoding="async" width="340" height="255">
           <span class="service-badge">حلول صناعية وتجارية</span>
         </div>
         <div class="service-body">
@@ -1508,7 +1568,7 @@
       <!-- 10. تنظيف المفروشات والكنب -->
       <article class="service-card" id="service-upholstery">
         <div class="service-img-wrap">
-          <img src="images/kanb.png" alt="تنظيف المفروشات والكنب - روفان كلين">
+          <img src="images/kanb.png" alt="تنظيف المفروشات والكنب - روفان كلين" loading="lazy" decoding="async" width="340" height="255">
           <span class="service-badge">غسيل بالبخار واشتراكات</span>
         </div>
         <div class="service-body">
@@ -1528,10 +1588,10 @@
         </div>
       </article>
 
-      <!-- 11. افضل خدمة تنظيف منازل (الكتالوج الشامل) -->
+      <!-- 11. افضل خدمة تنظيف منازل -->
       <article class="service-card" style="border-color: var(--gold-primary);">
         <div class="service-img-wrap">
-          <img src="images/rovan_all_services_grid_catalog.jpg" alt="افضل خدمة تنظيف منازل بالقاهرة - روفان كلين سرفيس">
+          <img src="images/rovan_all_services_grid_catalog.jpg" alt="افضل خدمة تنظيف منازل بالقاهرة - روفان كلين سرفيس" loading="lazy" decoding="async" width="340" height="255">
           <span class="service-badge" style="background:var(--gold-gradient); color:#000;">الباقة الشاملة الأكثر طلباً</span>
         </div>
         <div class="service-body">
@@ -1554,7 +1614,7 @@
       <!-- 12. مكافحة الحشرات وواجهات الزجاج -->
       <article class="service-card">
         <div class="service-img-wrap">
-          <img src="images/mkafht-alhshrat.png" alt="مكافحة الحشرات ورش المبيدات - روفان كلين">
+          <img src="images/mkafht-alhshrat.png" alt="مكافحة الحشرات ورش المبيدات - روفان كلين" loading="lazy" decoding="async" width="340" height="255">
           <span class="service-badge">مبيدات ألمانية معتمدة</span>
         </div>
         <div class="service-body">
@@ -1588,7 +1648,7 @@
 
       <div class="showcase-grid">
         <div class="showcase-card">
-          <img src="images/rovan_all_cleaning_services_poster.png" alt="بوستر عروض روفان كلين سرفيس">
+          <img src="images/rovan_all_cleaning_services_poster.png" alt="بوستر عروض روفان كلين سرفيس" loading="lazy" decoding="async" width="500" height="700">
           <div class="showcase-info">
             <h3>عروض وباقات الموسم الحصرية</h3>
             <p>خصومات فورية عند حجز خدمات متعددة للفلل والشركات والمنازل مع جلي الرخام.</p>
@@ -1597,7 +1657,7 @@
         </div>
 
         <div class="showcase-card">
-          <img src="images/tanzef-alzgag.png" alt="تنظيف واجهات الزجاج - روفان كلين">
+          <img src="images/tanzef-alzgag.png" alt="تنظيف واجهات الزجاج - روفان كلين" loading="lazy" decoding="async" width="500" height="700">
           <div class="showcase-info">
             <h3>تنظيف واجهات الزجاج والكلادينج</h3>
             <p>فريق محترف لتنظيف واجهات المباني الزجاجية للأبراج والشركات بأحدث أوناش الأمان.</p>
@@ -1608,7 +1668,7 @@
     </div>
   </section>
 
-  <!-- Why Choose Us (لماذا نحن الأفضل) -->
+  <!-- Why Choose Us -->
   <section class="why-section container" id="why-us">
     <div class="section-head">
       <span class="sub">لماذا روفان كلين؟</span>
@@ -1643,7 +1703,7 @@
     </div>
   </section>
 
-  <!-- Service Areas (نطاق التغطية المحدث بالكامل) -->
+  <!-- Service Areas -->
   <section class="areas-section">
     <div class="container">
       <div class="section-head" style="margin-top:0;">
@@ -1653,30 +1713,21 @@
       </div>
 
       <div class="areas-tags">
-        <!-- المحافظات الرئيسية -->
         <div class="area-badge"><i class="fa-solid fa-map-location-dot"></i> محافظة القاهرة</div>
         <div class="area-badge"><i class="fa-solid fa-map-location-dot"></i> محافظة الجيزة</div>
-
-        <!-- القاهرة الجديدة والمدن المجاورة -->
         <div class="area-badge"><i class="fa-solid fa-location-dot"></i> القاهرة الجديدة</div>
         <div class="area-badge"><i class="fa-solid fa-location-dot"></i> التجمع الخامس</div>
         <div class="area-badge"><i class="fa-solid fa-location-dot"></i> مدينتي والرحاب</div>
         <div class="area-badge"><i class="fa-solid fa-location-dot"></i> مدينة الشروق</div>
         <div class="area-badge"><i class="fa-solid fa-location-dot"></i> مدينة بدر</div>
         <div class="area-badge"><i class="fa-solid fa-location-dot"></i> مدينة السلام</div>
-
-        <!-- شرق ووسط القاهرة -->
         <div class="area-badge"><i class="fa-solid fa-location-dot"></i> مدينة نصر</div>
         <div class="area-badge"><i class="fa-solid fa-location-dot"></i> زهراء مدينة نصر</div>
         <div class="area-badge"><i class="fa-solid fa-location-dot"></i> مصر الجديدة</div>
         <div class="area-badge"><i class="fa-solid fa-location-dot"></i> وسط البلد وعابدين</div>
-
-        <!-- جنوب القاهرة -->
         <div class="area-badge"><i class="fa-solid fa-location-dot"></i> المعادي والمقطم</div>
         <div class="area-badge"><i class="fa-solid fa-location-dot"></i> زهراء المعادي</div>
         <div class="area-badge"><i class="fa-solid fa-location-dot"></i> البساتين ودار السلام</div>
-
-        <!-- الجيزة وغرب القاهرة -->
         <div class="area-badge"><i class="fa-solid fa-location-dot"></i> 6 أكتوبر</div>
         <div class="area-badge"><i class="fa-solid fa-location-dot"></i> حدائق أكتوبر</div>
         <div class="area-badge"><i class="fa-solid fa-location-dot"></i> الشيخ زايد</div>
@@ -1686,7 +1737,7 @@
     </div>
   </section>
 
-  <!-- CTA Banner المصحح هندسياً -->
+  <!-- CTA Banner -->
   <section class="container" id="fast-booking">
     <div class="cta-banner">
       <h2>احصل على نظافة مثالية لمنزلك أو شركتك اليوم</h2>
@@ -1698,7 +1749,7 @@
     </div>
   </section>
 
-  <!-- قسم الصور التوضيحية وفيديو اليوتيوب -->
+  <!-- قسم الصور والفيديو المسرّع بتقنية الواجهة التفاعلية (Facade) -->
   <section class="bottom-showcase-section">
     <div class="container">
       <div class="section-head" style="margin-top:0;">
@@ -1708,11 +1759,9 @@
       </div>
 
       <div class="bottom-images-grid">
-        
-        <!-- الصورة الأولى: rovancairobestcleaning.png -->
         <div class="bottom-img-card">
           <div class="bottom-img-wrap">
-            <img src="images/rovancairobestcleaning.png" alt="أفضل شركة تنظيف منازل وشركات بالقاهرة - روفان كلين سرفيس">
+            <img src="images/rovancairobestcleaning.png" alt="أفضل شركة تنظيف منازل وشركات بالقاهرة - روفان كلين سرفيس" loading="lazy" decoding="async" width="400" height="280">
           </div>
           <div class="bottom-img-content">
             <div>
@@ -1725,10 +1774,9 @@
           </div>
         </div>
 
-        <!-- الصورة الثانية: rovanoctobergizabestcleaning.png -->
         <div class="bottom-img-card">
           <div class="bottom-img-wrap">
-            <img src="images/rovanoctobergizabestcleaning.png" alt="أفضل شركة تنظيف منازل في 6 أكتوبر والشيخ زايد والجيزة">
+            <img src="images/rovanoctobergizabestcleaning.png" alt="أفضل شركة تنظيف منازل في 6 أكتوبر والشيخ زايد والجيزة" loading="lazy" decoding="async" width="400" height="280">
           </div>
           <div class="bottom-img-content">
             <div>
@@ -1740,18 +1788,20 @@
             <a href="tel:01507110429" class="btn-card-call" style="margin-top: 15px; padding: 12px; justify-content: center;"><i class="fa-solid fa-phone"></i> احجز خدمتك بأكتوبر والجيزة</a>
           </div>
         </div>
-
       </div>
 
-      <!-- قسم فيديو اليوتيوب التعريفي -->
+      <!-- YouTube Facade Player (0ms Initial Delay) -->
       <div style="margin-top: 50px; text-align: center;">
         <div class="section-head" style="margin-bottom: 25px;">
           <span class="sub">فيديو ترويجي</span>
           <h2>تعرف على خدماتنا المرئية من <span>روفان كلين سرفيس</span></h2>
         </div>
         <div style="max-width: 800px; margin: 0 auto; border-radius: 20px; overflow: hidden; border: 2px solid var(--gold-primary); box-shadow: 0 10px 30px rgba(0,0,0,0.8);">
-          <div style="position: relative; width: 100%; padding-bottom: 56.25%;">
-            <iframe src="https://www.youtube.com/embed/PDw7WlYVuOs" title="شركة روفان كلين سرفيس" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen></iframe>
+          <div class="video-facade-container" id="ytVideoBox" onclick="playYouTubeVideo(this)">
+            <img src="https://i.ytimg.com/vi/PDw7WlYVuOs/hqdefault.jpg" alt="فيديو شركة روفان كلين سرفيس" loading="lazy" width="800" height="450">
+            <div class="play-btn-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -1759,7 +1809,7 @@
     </div>
   </section>
 
-  <!-- قسم الكلمات الدلالية لتقوية الـ SEO -->
+  <!-- SEO Keywords Section -->
   <section class="seo-keywords-section">
     <div class="seo-keywords-container">
       <h3>دليلك الشامل لخدمات النظافة والتعقيم في مصر</h3>
@@ -1795,7 +1845,7 @@
     </a>
   </div>
 
-  <!-- Footer (تواصل معانا) -->
+  <!-- Footer -->
   <footer id="contact">
     <div class="container">
       <div class="footer-brand">شركة روفان كلين سرفيس</div>
@@ -1809,7 +1859,7 @@
     </div>
   </footer>
 
-  <!-- كود تشغيل القائمة على شاشات الموبايل -->
+  <!-- Scripts -->
   <script>
     const menuToggle = document.getElementById('menuToggle');
     const navMenu = document.getElementById('navMenu');
@@ -1822,7 +1872,7 @@
     }
 
     if (servicesDropdown) {
-      servicesDropdown.addEventListener('click', (e) => {
+      servicesDropdown.addEventListener('click', () => {
         if (window.innerWidth <= 992) {
           servicesDropdown.classList.toggle('open');
         }
@@ -1836,6 +1886,11 @@
         }
       });
     });
+
+    // YouTube Facade Trigger
+    function playYouTubeVideo(container) {
+      container.innerHTML = '<iframe src="https://www.youtube.com/embed/PDw7WlYVuOs?autoplay=1" title="شركة روفان كلين سرفيس" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    }
   </script>
 
 </body>
