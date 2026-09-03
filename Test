@@ -4,8 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!-- Best Advanced SEO Meta Tags -->
-  <title>افضل شركة تنظيف منازل وشركات بالقاهرة والجيزة | روفان كلين سرفيس 01507110429</title>
+  <!-- Google Search Console Verification Meta Tag -->
+  <meta name="google-site-verification" content="ymcAXd-4zfBY-Wlf6jnLgDMW-VdcTdC8_xOny-Z3J1Y" />
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7B2Q5WBGK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Q7B2Q5WBGK');
+  </script>
+  
+  <!-- Google tag (gtag.js) - Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18406969021"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18406969021');
+  </script>
+  
+    <!-- Best Advanced SEO Meta Tags -->
+  <title>شركة روفان كلين سرفيس | افضل شركة تنظيف منازل وشركات بالقاهرة والجيزة 01507110429</title>
+  <link rel="canonical" href="https://rovancleanservice.com/">
   <meta name="description" content="افضل شركة تنظيف منازل وشركات بالقاهرة والجيزة - شركة روفان كلين سرفيس. متخصصون في تنظيف بعد التشطيب، جلي وتلميع الرخام، تنظيف عميق، تنظيف المطابخ، تنظيف الفلل والقصور، تنظيف السيراميك شديد الاتساخ، والمخازن بأحدث الأجهزة 01507110429.">
   <meta name="keywords" content="افضل شركة تنظيف منازل وشركات, شركة تنظيف منازل بالقاهرة, شركة روفان كلين سرفيس, تنظيف بعد التشطيب, جلي وتلميع الرخام, تنظيف عميق للمنازل, تنظيف المطابخ, تنظيف الشركات والمكاتب, تنظيف الفلل والقصور, تنظيف السراميك شديد الاتساخ, تنظيف المخازن, تنظيف يومي, افضل خدمة تنظيف منازل, اسعار شركات تنظيف المنازل بالقاهرة">
   <meta name="author" content="شركة روفان كلين سرفيس">
@@ -18,8 +40,8 @@
   <meta property="og:type" content="business.business">
   <meta property="og:title" content="افضل شركة تنظيف منازل وشركات بالقاهرة | روفان كلين سرفيس 01507110429">
   <meta property="og:description" content="خدمات النظافة المتكاملة للمنازل، الشركات، الفلل والقصور، جلي الرخام وتنظيف ما بعد التشطيب بالقاهرة والجيزة بأعلى جودة وضمان.">
-  <meta property="og:image" content="images/wagha.png">
-  <meta property="og:url" content="https://soufiane4103.github.io/index/">
+  <meta property="og:image" content="https://rovancleanservice.com/images/wagha.png">
+  <meta property="og:url" content="https://rovancleanservice.com/">
   <meta property="og:locale" content="ar_EG">
   <meta property="og:site_name" content="شركة روفان كلين سرفيس">
 
@@ -29,7 +51,7 @@
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "name": "شركة روفان كلين سرفيس - افضل شركة تنظيف منازل وشركات",
-    "image": "images/wagha.png",
+    "image": "https://rovancleanservice.com/images/wagha.png",
     "telephone": "+201507110429",
     "priceRange": "EGP",
     "address": {
@@ -50,12 +72,16 @@
       "closes": "23:59"
     },
     "areaServed": [
-      "القاهرة", "الجيزة", "التجمع الخامس", "القاهرة الجديدة", "الشيخ زايد", "6 أكتوبر", "مدينة نصر", "مصر الجديدة", "المعادي", "الرحاب", "مدينتي", "الشروق"
+      "محافظة القاهرة", "محافظة الجيزة", "مدينة 6 أكتوبر", "حدائق أكتوبر", "الشيخ زايد", 
+      "التجمع الخامس", "القاهرة الجديدة", "الرحاب", "مدينتي", "مدينة نصر", "زهراء مدينة نصر", 
+      "مصر الجديدة", "المعادي", "زهراء المعادي", "المقطم", "وسط البلد", "عابدين", 
+      "البساتين", "دار السلام", "الدقي", "المهندسين", "الهرم", "فيصل", 
+      "الشروق", "مدينة بدر", "مدينة السلام"
     ],
     "description": "أفضل شركة تنظيف منازل وشركات وفلل وتنظيف ما بعد التشطيب وجلي الرخام في القاهرة والجيزة."
   }
   </script>
-
+  
   <!-- Google Fonts: Cairo -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,7 +107,7 @@
       --text-muted: #94a3b8;
       --text-gold: #f5df88;
       --whatsapp-green: #25d366;
-      --gold-gradient: linear-gradient(135deg, #d4af37 0%, #fae69e 50%, #997316 100%);
+      --gold-gradient: linear-gradient(135deg, #d4af37 0%, #fae69e 50%, #aa7c11 100%);
       --blue-gradient: linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #0284c7 100%);
       --card-gradient: linear-gradient(180deg, #0d1527 0%, #060a14 100%);
     }
@@ -862,7 +888,7 @@
   <!-- Top Bar -->
   <div class="top-bar">
     <div class="top-bar-info">
-      <span><i class="fa-solid fa-crown"></i> افضل شركة تنظيف منازل وشركات بالقاهرة والجيزة</span>
+      <span><i class="fa-solid fa-crown"></i> شركة روفان كلين سرفيس - افضل شركة تنظيف منازل وشركات بالقاهرة والجيزة</span>
       <span><i class="fa-solid fa-clock"></i> خدمة متوفرة 24 ساعة طوال أيام الأسبوع</span>
     </div>
     <div class="top-bar-phone">
@@ -903,7 +929,7 @@
         <a href="tel:01507110429" class="btn-cta btn-call-gold">
           <i class="fa-solid fa-phone-volume"></i> اتصل للحجز: 01507110429
         </a>
-        <a href="https://wa.me/201507110429?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AD%D8%AC%D8%B2%20%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%B1%D9%88%D9%81%D8%A7%D9%86%20%D9%83%D9%84%D9%8A%D9%86" target="_blank" class="btn-cta btn-whatsapp-blue">
+        <a href="https://wa.me/201507110429?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D9%85%D8%B9%20%D8%B1%D9%88%D9%81%D8%A7%D9%86%20%D9%83%D9%84%D9%8A%D9%86" target="_blank" class="btn-cta btn-whatsapp-blue">
           <i class="fa-brands fa-whatsapp"></i> تواصل عبر واتساب
         </a>
       </div>
@@ -1011,7 +1037,7 @@
           </ul>
           <div class="card-actions">
             <a href="tel:01507110429" class="btn-card-call"><i class="fa-solid fa-phone"></i> اتصال</a>
-            <a href="https://wa.me/201507110429?text=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AC%D9%84%D9%8A%20%D9%88%D8%AA%D9%84%D9%85%D9%8A%D8%B9%20%D8%A7%D9%84%D8%B1%D8%AE%D8%A7%D9%85" target="_blank" class="btn-card-wa"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+            <a href="https://wa.me/201507110429?text=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AC%D9%84%D9%8A%20%D9%88%D8%AA%D9%84%D9%85%D9%8A%D8%B9%20%D8%A7%D9%84%D8%B1%D8%A6%D8%A7%D9%85" target="_blank" class="btn-card-wa"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
           </div>
         </div>
       </article>
@@ -1062,29 +1088,29 @@
         </div>
       </article>
 
-<!-- 6. تنظيف الشركات والمكاتب -->
-<article class="service-card">
-  <div class="service-img-wrap">
-    <img src="images/tanzefshrekat.png" alt="تنظيف الشركات والمكاتب - روفان كلين">
-    <span class="service-badge">عقود دورية مخصصة</span>
-  </div>
-  <div class="service-body">
-    <h3><i class="fa-solid fa-building"></i> 6. تنظيف الشركات والمكاتب</h3>
-    <p>
-      حلول نظافة احترافية للشركات، البنوك، العيادات والمقرات الإدارية بعقود دورية (يومية/أسبوعية/شهرية) لضمان بيئة عمل معقمة وواجهة مشرفة تليق بعملائك.
-    </p>
-    <ul class="service-specs">
-      <li><i class="fa-solid fa-check-circle"></i> تنظيف وتعقيم المكاتب والشاشات والأرضيات</li>
-      <li><i class="fa-solid fa-check-circle"></i> غسيل كراسي المكاتب والموكيت بالبخار</li>
-      <li><i class="fa-solid fa-check-circle"></i> عمالة نظافة مدربة بنظام الزيارات الدورية</li>
-    </ul>
-    <div class="card-actions">
-      <a href="tel:01507110429" class="btn-card-call"><i class="fa-solid fa-phone"></i> اتصال</a>
-      <a href="https://wa.me/201507110429?text=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D9%83%D8%A7%D8%AA%D8%A8" target="_blank" class="btn-card-wa"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
-    </div>
-  </div>
-</article>
-    
+      <!-- 6. تنظيف الشركات والمكاتب -->
+      <article class="service-card">
+        <div class="service-img-wrap">
+          <img src="images/tanzefshrekat.png" alt="تنظيف الشركات والمكاتب - روفان كلين">
+          <span class="service-badge">عقود دورية مخصصة</span>
+        </div>
+        <div class="service-body">
+          <h3><i class="fa-solid fa-building"></i> 6. تنظيف الشركات والمكاتب</h3>
+          <p>
+            حلول نظافة احترافية للشركات، البنوك، العيادات والمقرات الإدارية بعقود دورية (يومية/أسبوعية/شهرية) لضمان بيئة عمل معقمة وواجهة مشرفة تليق بعملائك.
+          </p>
+          <ul class="service-specs">
+            <li><i class="fa-solid fa-check-circle"></i> تنظيف وتعقيم المكاتب والشاشات والأرضيات</li>
+            <li><i class="fa-solid fa-check-circle"></i> غسيل كراسي المكاتب والموكيت بالبخار</li>
+            <li><i class="fa-solid fa-check-circle"></i> عمالة نظافة مدربة بنظام الزيارات الدورية</li>
+          </ul>
+          <div class="card-actions">
+            <a href="tel:01507110429" class="btn-card-call"><i class="fa-solid fa-phone"></i> اتصال</a>
+            <a href="https://wa.me/201507110429?text=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D9%83%D8%A7%D8%AA%D8%A8" target="_blank" class="btn-card-wa"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+          </div>
+        </div>
+      </article>
+
       <!-- 7. تنظيف الفلل والقصور -->
       <article class="service-card">
         <div class="service-img-wrap">
@@ -1250,7 +1276,7 @@
           <div class="showcase-info">
             <h3>تنظيف واجهات الزجاج والكلادينج</h3>
             <p>فريق محترف لتنظيف واجهات المباني الزجاجية للأبراج والشركات بأحدث أوناش الأمان.</p>
-            <a href="https://wa.me/201507110429?text=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA" target="_blank" class="btn-cta btn-whatsapp-blue" style="width:100%; justify-content:center; padding:11px;"><i class="fa-brands fa-whatsapp"></i> استفسر عن الواجهات</a>
+            <a href="https://wa.me/201507110429?text=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA" target="_blank" class="btn-cta btn-whatsapp-blue" style="width:100%; justify-content:center; padding:11px;"><i class="fa-brands fa-whatsapp"></i> استفسر عن الواجهات</a>
           </div>
         </div>
       </div>
@@ -1292,49 +1318,262 @@
     </div>
   </section>
 
-  <!-- Service Areas -->
+  <!-- Service Areas (نطاق التغطية المحدث) -->
   <section class="areas-section">
     <div class="container">
       <div class="section-head" style="margin-top:0;">
-        <span class="sub">نطاق التغطية</span>
+        <span class="sub">نطاق التغطية الجغرافية</span>
         <h2>نخدم جميع مناطق <span>القاهرة الكبرى والجيزة</span></h2>
-        <p>فريقنا مجهز للوصول إليك في أسرع وقت أينما كنت بسيارات مجهزة بالكامل.</p>
+        <p>أسطول سياراتنا مجهز للوصول إليك أينما كنت بأسرع وقت وأحدث معدات النظافة والتعقيم.</p>
       </div>
 
       <div class="areas-tags">
-        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> التجمع الخامس</div>
+        <!-- المحافظات الرئيسية -->
+        <div class="area-badge"><i class="fa-solid fa-map-location-dot"></i> محافظة القاهرة</div>
+        <div class="area-badge"><i class="fa-solid fa-map-location-dot"></i> محافظة الجيزة</div>
+
+        <!-- القاهرة الجديدة والمدن المجاورة -->
         <div class="area-badge"><i class="fa-solid fa-location-dot"></i> القاهرة الجديدة</div>
+        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> التجمع الخامس</div>
         <div class="area-badge"><i class="fa-solid fa-location-dot"></i> مدينتي والرحاب</div>
-        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> الشروق وبدر</div>
+        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> مدينة الشروق</div>
+        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> مدينة بدر</div>
+        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> مدينة السلام</div>
+
+        <!-- شرق ووسط القاهرة -->
         <div class="area-badge"><i class="fa-solid fa-location-dot"></i> مدينة نصر</div>
+        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> زهراء مدينة نصر</div>
         <div class="area-badge"><i class="fa-solid fa-location-dot"></i> مصر الجديدة</div>
+        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> وسط البلد وعابدين</div>
+
+        <!-- جنوب القاهرة -->
         <div class="area-badge"><i class="fa-solid fa-location-dot"></i> المعادي والمقطم</div>
-        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> الشيخ زايد</div>
+        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> زهراء المعادي</div>
+        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> البساتين ودار السلام</div>
+
+        <!-- الجيزة وغرب القاهرة -->
         <div class="area-badge"><i class="fa-solid fa-location-dot"></i> 6 أكتوبر</div>
-        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> الدقي والمهندسين</div>
+        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> حدائق أكتوبر</div>
+        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> الشيخ زايد</div>
+        <div class="area-badge"><i class="fa-solid fa-location-dot"></i> المهندسين والدقي</div>
         <div class="area-badge"><i class="fa-solid fa-location-dot"></i> الهرم وفيصل</div>
       </div>
     </div>
   </section>
 
-  <!-- Fast Booking Banner -->
-  <section class="container">
-    <div class="cta-banner">
-      <h2>جاهز للحصول على أعلى مستوى نظافة لمنزلك أو شركتك؟</h2>
-      <p>تواصل مع فريق شركة روفان كلين سرفيس الآن وتمتع بأفضل الخصومات والعروض الفورية.</p>
-      <div style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
-        <a href="tel:01507110429" class="btn-cta btn-call-gold"><i class="fa-solid fa-phone"></i> اتصل فوراً: 01507110429</a>
-        <a href="https://wa.me/201507110429?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D9%85%D8%B9%20%D8%B1%D9%88%D9%81%D8%A7%D9%86%20%D9%83%D9%84%D9%8A%D9%86" target="_blank" class="btn-cta btn-whatsapp-blue"><i class="fa-brands fa-whatsapp"></i> احجز عبر واتساب</a>
+  <a href="https://wa.me/201507110429?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%A7%D9%84%D8%AA%D9%86%D8%B8%D9%8A%D9%81" target="_blank" class="btn-cta btn-whatsapp-blue"><i class="fa-brands fa-whatsapp"></i> احجز عبر واتساب</a>
       </div>
     </div>
   </section>
 
-  <!-- Floating Quick Contact Buttons -->
+  <!-- ========================================== -->
+  <!-- قسم الصور الجديدة وفيديو اليوتيوب والشرح   -->
+  <!-- ========================================== -->
+  <section class="bottom-showcase-section">
+    <div class="container">
+      <div class="section-head" style="margin-top:0;">
+        <span class="sub">لماذا نحن الأفضل في مجالك؟</span>
+        <h2>التميز والاحترافية في <span>القاهرة والجيزة</span></h2>
+        <p>نتفرد بتقديم خدمات نظافة استثنائية تعتمد على المعايير العالمية وأحدث تقنيات التعقيم والتلميع.</p>
+      </div>
+
+      <div class="bottom-images-grid">
+        
+        <!-- الصورة الأولى: rovancairobestcleaning.png -->
+        <div class="bottom-img-card">
+          <div class="bottom-img-wrap">
+            <img src="images/rovancairobestcleaning.png" alt="أفضل شركة تنظيف منازل وشركات بالقاهرة - روفان كلين سرفيس">
+          </div>
+          <div class="bottom-img-content">
+            <div>
+              <h3><i class="fa-solid fa-circle-check"></i> لماذا نحن أفضل شركة تنظيف منازل بالقاهرة؟</h3>
+              <p>
+                نحن في <strong>روفان كلين سرفيس</strong> نعتبر الخيار الأول والأكثر ثقة لكل من يبحث عن الجودة الفائقة والاحترافية في القاهرة الكبرى. نتميز بالاعتماد على أحدث المعدات التكنولوجية المتطورة ومحاليل التطهير الآمنة تماماً على صحة أفراد أسرتك. يمتلك فريقنا خبرة طويلة في التعامل مع كافة أنواع المساحات (شقق، فلل، قصور، ومقرات شركات)، مع الالتزام التام بالمواعيد، الدقة المتناهية في تفاصيل النظافة العميقة، وتقديم أسعار تنافسية لا تقبل المنافسة مع ضمان شامل على كافة الخدمات المقدمة.
+              </p>
+            </div>
+            <a href="tel:01507110429" class="btn-card-call" style="margin-top: 15px; padding: 12px; justify-content: center;"><i class="fa-solid fa-phone"></i> احجز خدمتك بالقاهرة الآن</a>
+          </div>
+        </div>
+
+        <!-- الصورة الثانية: rovanoctobergizabestcleaning.png -->
+        <div class="bottom-img-card">
+          <div class="bottom-img-wrap">
+            <img src="images/rovanoctobergizabestcleaning.png" alt="أفضل شركة تنظيف منازل في 6 أكتوبر والشيخ زايد والجيزة">
+          </div>
+          <div class="bottom-img-content">
+            <div>
+              <h3><i class="fa-solid fa-circle-check"></i> لماذا نحن الاختيار الأول في 6 أكتوبر والجيزة؟</h3>
+              <p>
+                تغطي خدماتنا المتميزة كافة مدن ومناطق الجيزة و6 أكتوبر والشيخ زايد والقرى السياحية بفضل أسطول سيارات مجهز بالكامل يصلك أينما كنت في أسرع وقت. نتميز بقدرتنا الفائقة على إنجاز أعمال تنظيف ما بعد التشطيب للوحدات السكنية الجديدة، جلي وتلميع الرخام والسيراميك بأقراص الكريستال الإيطالية، وتنظيف الواجهات والمفروشات بالبخار بدقة متناهية. هدفنا الدائم هو توفير بيئة نظيفة، صحية، ومثالية تمنحك الراحة والاطمئنان وتفوق توقعاتك دائماً.
+              </p>
+            </div>
+            <a href="tel:01507110429" class="btn-card-call" style="margin-top: 15px; padding: 12px; justify-content: center;"><i class="fa-solid fa-phone"></i> احجز خدمتك بأكتوبر والجيزة</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- قسم فيديو اليوتيوب التعريفي -->
+      <div style="margin-top: 50px; text-align: center;">
+        <div class="section-head" style="margin-bottom: 25px;">
+          <span class="sub">فيديو ترويجي</span>
+          <h2>تعرف على خدماتنا المرئية من <span>روفان كلين سرفيس</span></h2>
+        </div>
+        <div style="max-width: 800px; margin: 0 auto; border-radius: 20px; overflow: hidden; border: 2px solid var(--gold-primary); box-shadow: 0 10px 30px rgba(0,0,0,0.8);">
+          <div style="position: relative; width: 100%; padding-bottom: 56.25%;">
+            <iframe src="https://www.youtube.com/embed/PDw7WlYVuOs" title="شركة روفان كلين سرفيس" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- قسم الكلمات الدلالية لتقوية الـ SEO في النهاية -->
+  <!-- ========================================== -->
+  <section class="seo-keywords-section">
+    <div class="seo-keywords-container">
+      <h3>دليلك الشامل لخدمات النظافة والتعقيم في مصر</h3>
+      <p>نعمل باستمرار على توفير أفضل تجربة بحث وخدمة لعملائنا الكرام من خلال تغطية شاملة لكافة الكلمات الدلالية ومحركات البحث لضمان سهولة الوصول إلينا:</p>
+      
+      <div class="keywords-cloud">
+        <span class="keyword-tag">افضل شركة تنظيف منازل بالقاهرة</span>
+        <span class="keyword-tag">شركة تنظيف شقق بعد بالتشطيب</span>
+        <span class="keyword-tag">أرخص شركة تنظيف في 6 أكتوبر</span>
+        <span class="keyword-tag">شركة جلي وتلميع الرخام بالكريستال</span>
+        <span class="keyword-tag">تنظيف الفلل والقصور بالتجمع الخامس</span>
+        <span class="keyword-tag">شركة تنظيف منازل بالشيخ زايد</span>
+        <span class="keyword-tag">أسعار شركات تنظيف المنازل بمصر</span>
+        <span class="keyword-tag">تنظيف المطابخ وإذابة الدهون المستعصية</span>
+        <span class="keyword-tag">غسيل السجاد والكنب بالبخار</span>
+        <span class="keyword-tag">شركة تعقيم وتطهير منازل وشركات</span>
+        <span class="keyword-tag">تنظيف واجهات الزجاج والكلادينج</span>
+        <span class="keyword-tag">مكافحة الحشرات ورش المبيدات الآمنة</span>
+        <span class="keyword-tag">خدمة تنظيف دورية ويومية للمكاتب</span>
+        <span class="keyword-tag">شركة تنظيف بمدينتي والرحاب</span>
+        <span class="keyword-tag">روفان كلين سرفيس 01507110429</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- تزويد الـ CSS الخاص بالصور والكروت الجديدة (في حال لم يكن موجوداً مسبقاً) -->
+  <style>
+    .bottom-showcase-section {
+      background: #070c18;
+      padding: 70px 0;
+      border-top: 2px solid var(--gold-dark);
+    }
+    .bottom-images-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 35px;
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+    .bottom-img-card {
+      background: var(--card-gradient);
+      border: 1.5px solid var(--gold-primary);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.8);
+      display: flex;
+      flex-direction: column;
+    }
+    .bottom-img-wrap {
+      width: 100%;
+      height: 280px;
+      background: #020408;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .bottom-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .bottom-img-card:hover .bottom-img-wrap img {
+      transform: scale(1.05);
+    }
+    .bottom-img-content {
+      padding: 28px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .bottom-img-content h3 {
+      font-size: 1.45rem;
+      color: var(--gold-light);
+      margin-bottom: 12px;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .bottom-img-content h3 i {
+      color: var(--blue-light);
+    }
+    .bottom-img-content p {
+      color: #cbd5e1;
+      font-size: 1.02rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    .seo-keywords-section {
+      background: #04070d;
+      padding: 60px 20px;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+    }
+    .seo-keywords-container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .seo-keywords-container h3 {
+      font-size: 1.5rem;
+      color: var(--gold-light);
+      margin-bottom: 15px;
+      font-weight: 900;
+    }
+    .seo-keywords-container p {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      margin-bottom: 25px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .keywords-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .keyword-tag {
+      background: rgba(37, 99, 235, 0.1);
+      border: 1px solid rgba(37, 99, 235, 0.3);
+      color: var(--blue-light);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+    .keyword-tag:hover {
+      background: var(--blue-electric);
+      color: #fff;
+      border-color: var(--gold-primary);
+    }
+  </style>
+
+  <!-- Floating Quick Buttons -->
   <div class="floating-actions">
-    <a href="https://wa.me/201507110429?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%B1%D9%88%D9%81%D8%A7%D9%86%20%D9%83%D9%84%D9%8A%D9%86" target="_blank" class="float-circle float-wa" title="تواصل معنا عبر واتساب">
+    <a href="https://wa.me/201507110429?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%86%D8%B8%D9%8A%D9%81" target="_blank" class="float-circle float-wa" aria-label="WhatsApp">
       <i class="fa-brands fa-whatsapp"></i>
     </a>
-    <a href="tel:01507110429" class="float-circle float-phone" title="اتصل بنا الآن">
+    <a href="tel:01507110429" class="float-circle float-phone" aria-label="Phone Call">
       <i class="fa-solid fa-phone"></i>
     </a>
   </div>
@@ -1343,12 +1582,12 @@
   <footer>
     <div class="container">
       <div class="footer-brand">شركة روفان كلين سرفيس</div>
-      <p>الرائدة في خدمات النظافة المتكاملة، جلي الرخام، تنظيف بعد التشطيب، ومكافحة الحشرات في القاهرة والجيزة</p>
+      <p>الرائدون في خدمات النظافة المتكاملة، جلي الرخام، وتعقيم المنازل والشركات في مصر.</p>
       <div class="footer-phone-box">
-        للحجز والاستفسار: <a href="tel:01507110429">01507110429</a>
+        حجز واستعلام فوري: <a href="tel:01507110429">01507110429</a>
       </div>
       <div class="copy">
-        جميع الحقوق محفوظة &copy; 2026 شركة روفان كلين سرفيس - افضل شركة تنظيف منازل وشركات بالقاهرة
+        جميع حقوق الطبع والنشر محفوظة © 2026 - شركة روفان كلين سرفيس | تصميم وتطوير محركات البحث SEO.
       </div>
     </div>
   </footer>
