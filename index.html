@@ -1901,10 +1901,24 @@
       });
     });
 
-    // YouTube Facade Trigger
+        // YouTube Facade Trigger
     function playYouTubeVideo(container) {
       container.innerHTML = '<iframe src="https://www.youtube.com/embed/PDw7WlYVuOs?autoplay=1" title="شركة روفان كلين سرفيس" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
     }
+
+    // تتبع تحويلات الاتصال والواتساب لحساب Google Ads
+    document.addEventListener('DOMContentLoaded', function() {
+      const contactLinks = document.querySelectorAll('a[href^="tel:"], a[href*="wa.me"]');
+      contactLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          if (typeof gtag === 'function') {
+            gtag('event', 'conversion', {
+              'send_to': 'AW-18406969021/LsxBCIi15e0cEL2dkMlE'
+            });
+          }
+        });
+      });
+    });
   </script>
 
 </body>
