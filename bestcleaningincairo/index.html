@@ -16,7 +16,7 @@
   <meta name="google-site-verification" content="ymcAXd-4zfBY-Wlf6jnLgDMW-VdcTdC8_xOny-Z3J1Y" />
   
   <!-- LCP Preload for Hero Image -->
-  <link rel="preload" as="image" href="rovan_best_home_cleaning_source_35kb.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="images/best-cleaning-company-cairo.webp" fetchpriority="high">
 
   <!-- Deferred Google Tags (Analytics & Ads) to Speed up Initial Render -->
   <script>
@@ -61,7 +61,7 @@
   <meta property="og:type" content="business.business">
   <meta property="og:title" content="Best Home Cleaning Company in Cairo | Rovan Clean Service 01507110429">
   <meta property="og:description" content="Comprehensive home cleaning with best quality and professional services available 7 days a week in Cairo and Giza.">
-  <meta property="og:image" content="https://rovancleanservice.com/images/best-cleaning-cbest-cleaning-company-cairo.webpompany-cairo.webp">
+  <meta property="og:image" content="https://rovancleanservice.com/images/best-cleaning-company-cairo.webp">
   <meta property="og:url" content="https://rovancleanservice.com/">
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="Rovan Clean Service">
@@ -91,7 +91,7 @@
         "@id": "https://rovancleanservice.com/#business",
         "name": "Rovan Clean Service - Best Home & Office Cleaning Company",
         "url": "https://rovancleanservice.com/",
-        "image": "https://rovancleanservice.com/images/rovan_best_home_cleaning_source_35kb.webp",
+        "image": "https://rovancleanservice.com/images/best-cleaning-company-cairo.webp",
         "telephone": "+201507110429",
         "priceRange": "EGP",
         "address": {
@@ -344,7 +344,7 @@
     /* Hero Section */
     .hero {
       position: relative;
-      background: linear-gradient(180deg, rgba(4,7,13,0.85) 0%, rgba(9,14,26,0.96) 100%), url('images/best-cleaning-company-cairo.webp') center/cover no-repeat;
+      background: linear-gradient(180deg, rgba(4,7,13,0.85) 0%, rgba(9,14,26,0.96) 100%);
       padding: 65px 20px 75px;
       text-align: center;
       border-bottom: 2px solid var(--border-color);
@@ -394,21 +394,26 @@
       margin-right: auto;
     }
 
+    /* تنسيق صورة الواجهة لتظهر بالكامل، واضحة وبحجم متوسط غير ممتد */
     .hero-banner-frame {
-      max-width: 1000px;
+      max-width: 700px;
       margin: 40px auto 0;
       border-radius: 20px;
       overflow: hidden;
       box-shadow: 0 14px 40px rgba(0,0,0,0.95), 0 0 25px rgba(37, 99, 235, 0.35);
       border: 2px solid var(--gold-primary);
-      aspect-ratio: 16 / 9;
-      background: #060a14;
+      background: #020408;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
     }
 
     .hero-banner-frame img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      height: auto;
+      max-height: 400px;
+      object-fit: contain;
       display: block;
     }
 
@@ -540,7 +545,6 @@
       font-size: 1.1rem;
     }
 
-    /* Clear English First & Arabic Second Descriptions */
     .desc-en {
       color: #cbd5e1;
       font-size: 0.95rem;
@@ -816,8 +820,9 @@
       <p class="hero-desc-en">We provide the highest standards of comprehensive cleaning and disinfection for apartments, villas, palaces, corporate offices, post-construction cleaning, marble polishing, comprehensive home cleaning with best quality, daily instant cleaning, and monthly packages using advanced professional equipment.</p>
       <p class="hero-desc-ar">نقدم أعلى مستويات النظافة والتعقيم الشامل للشقق، الفلل والقصور، مقرات الشركات، تنظيف ما بعد التشطيب، جلي الرخام، خدمة تنظيف شامل للمنزل بأفضل جودة، خدمات التنظيف اليومي الفوري، والباقات الشهرية بأحدث المعدات الاحترافية.</p>
 
+      <!-- صورة الواجهة المحدثة (بحجم متوسط وتظهر بالكامل بوضوح) -->
       <div class="hero-banner-frame">
-        <img src="images/best-cleaning-company-cairo.webp" alt="Rovan Clean Service Hero Image" width="1000" height="562" fetchpriority="high">
+        <img src="images/best-cleaning-company-cairo.webp" alt="Rovan Clean Service Hero Image" width="700" height="400" fetchpriority="high">
       </div>
     </div>
   </section>
