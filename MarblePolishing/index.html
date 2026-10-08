@@ -12,6 +12,26 @@
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="theme-color" content="#04070d">
 
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T9LDD3S8');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google tag (gtag.js) - Google Ads & Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18406969021"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Q7B2Q5WBGK');
+    gtag('config', 'AW-18406969021');
+  </script>
+
 <!-- Open Graph Meta Tags -->
 <meta property="og:type" content="article">
 <meta property="og:title" content="شركة جلي وتلميع الرخام والجرانيت والسيراميك | روفان كلين سرفيس 01507110429">
@@ -21,7 +41,7 @@
 <meta property="og:locale" content="ar_EG">
 
 <!-- Preload Font & Hero Image -->
-<link rel="preload" as="image" href="/images/galyrohamg.webp" fetchpriority="high">
+<link rel="preload" as="image" href="../images/galyrohamg.webp" fetchpriority="high">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,7 +77,6 @@
 
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 90px;
     }
 
     body {
@@ -66,6 +85,7 @@
       line-height: 1.85;
       overflow-x: hidden;
       padding-bottom: 70px;
+      /* تم إزالة مساحة الـ padding-top العلوية حتى يبدأ البنر بشكل طبيعي في أعلى الصفحة */
     }
 
     .icon {
@@ -81,7 +101,7 @@
       background: #020408;
       border-bottom: 1px solid rgba(212, 175, 55, 0.3);
       padding: 8px 18px;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -104,20 +124,21 @@
       border: 1px solid rgba(212, 175, 55, 0.4);
     }
 
-    /* Header */
+    /* Header (تم جعل البنر والشريط في أعلى الصفحة ويختفيان عند التمرير لأسفل) */
+    .header-wrapper {
+      width: 100%;
+      z-index: 9999;
+    }
+
     header {
-      background: rgba(4, 7, 13, 0.97);
+      background: rgba(4, 7, 13, 0.98);
       backdrop-filter: blur(12px);
-      position: sticky;
-      top: 0;
-      z-index: 999;
       border-bottom: 2px solid var(--gold-primary);
-      box-shadow: 0 4px 25px rgba(0,0,0,0.85);
     }
     .nav-container {
       max-width: 1250px;
       margin: 0 auto;
-      padding: 10px 20px;
+      padding: 8px 16px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -125,51 +146,54 @@
     .brand-box {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       text-decoration: none;
     }
     .brand-logo {
-      width: 54px;
-      height: 54px;
-      border-radius: 12px;
+      width: 46px;
+      height: 46px;
+      border-radius: 10px;
       overflow: hidden;
       border: 1.5px solid var(--gold-primary);
       background: #fff;
+      flex-shrink: 0;
     }
     .brand-logo img { width: 100%; height: 100%; object-fit: contain; }
     .brand-text h2 {
-      font-size: 1.2rem;
+      font-size: 1.05rem;
       font-weight: 800;
       background: var(--gold-gradient);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      white-space: nowrap;
     }
-    .brand-text span { font-size: 0.75rem; color: var(--blue-light); font-weight: 600; }
-    .header-btns { display: flex; gap: 10px; align-items: center; }
+    .brand-text span { font-size: 0.7rem; color: var(--blue-light); font-weight: 600; display: block; }
+    .header-btns { display: flex; gap: 8px; align-items: center; }
     .btn-header-call {
       background: var(--gold-gradient);
       color: #04070d;
       font-weight: 800;
-      padding: 8px 18px;
+      padding: 6px 14px;
       border-radius: 30px;
       text-decoration: none;
-      font-size: 0.92rem;
+      font-size: 0.85rem;
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
+      white-space: nowrap;
     }
 
     /* Page Hero */
     .page-hero {
       background: linear-gradient(180deg, rgba(4,7,13,0.95) 0%, rgba(9,14,26,0.98) 100%);
-      padding: 55px 20px 45px;
+      padding: 45px 16px 35px;
       text-align: center;
       border-bottom: 2px solid var(--border-color);
     }
     .page-hero h1 {
-      font-size: 2.3rem;
+      font-size: 2rem;
       font-weight: 800;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
       color: #fff;
     }
     .page-hero h1 span.gold {
@@ -178,26 +202,26 @@
       -webkit-text-fill-color: transparent;
     }
     .page-hero p {
-      font-size: 1.15rem;
+      font-size: 1.05rem;
       color: var(--text-body);
       max-width: 860px;
-      margin: 0 auto 25px;
+      margin: 0 auto 20px;
     }
     .page-hero-nav {
       display: flex;
       justify-content: center;
-      gap: 12px;
+      gap: 10px;
       flex-wrap: wrap;
     }
     .hero-nav-btn {
       background: rgba(37,99,235,0.15);
       border: 1px solid var(--blue-electric);
       color: var(--blue-light);
-      padding: 8px 18px;
+      padding: 6px 14px;
       border-radius: 25px;
       text-decoration: none;
       font-weight: 800;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       transition: 0.3s;
     }
     .hero-nav-btn:hover { background: var(--blue-electric); color: #fff; }
@@ -206,14 +230,14 @@
     .container {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 30px 16px;
     }
     .article-section {
       background: var(--card-gradient);
       border: 1.5px solid var(--border-color);
-      border-radius: 24px;
-      padding: 35px 30px;
-      margin-bottom: 60px;
+      border-radius: 20px;
+      padding: 30px 24px;
+      margin-bottom: 45px;
       box-shadow: 0 10px 35px rgba(0,0,0,0.7);
     }
     .article-section:hover {
@@ -221,11 +245,11 @@
     }
     .article-img-wrap {
       width: 100%;
-      height: 420px;
+      height: 380px;
       background: #020408;
-      border-radius: 18px;
+      border-radius: 14px;
       overflow: hidden;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
       border: 1.5px solid var(--gold-primary);
     }
     .article-img-wrap img {
@@ -235,54 +259,53 @@
       display: block;
     }
     .article-header {
-      margin-bottom: 25px;
+      margin-bottom: 20px;
       border-bottom: 1px dashed var(--border-color);
-      padding-bottom: 20px;
+      padding-bottom: 15px;
     }
     .article-header h2 {
-      font-size: 2rem;
+      font-size: 1.7rem;
       font-weight: 800;
       color: var(--gold-light);
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       line-height: 1.35;
     }
-    .article-header h2 .icon { color: var(--gold-primary); }
+    .article-header h2 .icon { color: var(--gold-primary); flex-shrink: 0; }
     .article-content {
-      font-size: 1.05rem;
+      font-size: 1.02rem;
       color: var(--text-body);
-      line-height: 2;
+      line-height: 1.9;
     }
     .article-content p {
-      margin-bottom: 22px;
+      margin-bottom: 18px;
       text-align: justify;
     }
     .article-content h3 {
-      font-size: 1.45rem;
+      font-size: 1.35rem;
       color: #fff;
-      margin: 30px 0 14px;
+      margin: 25px 0 12px;
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       border-right: 4px solid var(--gold-primary);
-      padding-right: 12px;
+      padding-right: 10px;
     }
     .article-content ul, .article-content ol {
-      margin: 15px 25px 25px 0;
+      margin: 15px 20px 20px 0;
     }
     .article-content li {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
     .article-content strong {
       color: var(--gold-light);
     }
 
-    /* Embedded image inside article */
     .inline-article-img {
-      max-width: 750px;
-      margin: 30px auto;
-      border-radius: 16px;
+      max-width: 100%;
+      margin: 25px auto;
+      border-radius: 14px;
       overflow: hidden;
       border: 2px solid var(--blue-electric);
       box-shadow: 0 8px 25px rgba(0,0,0,0.8);
@@ -293,21 +316,20 @@
       display: block;
     }
 
-    /* In-Article CTA Buttons */
     .article-cta {
       display: flex;
       justify-content: center;
-      gap: 16px;
+      gap: 12px;
       flex-wrap: wrap;
-      margin-top: 35px;
-      padding-top: 25px;
+      margin-top: 30px;
+      padding-top: 20px;
       border-top: 1px solid var(--border-color);
     }
     .btn-action-call, .btn-action-wa {
-      padding: 12px 28px;
+      padding: 10px 24px;
       border-radius: 30px;
       font-weight: 800;
-      font-size: 1rem;
+      font-size: 0.95rem;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
@@ -327,25 +349,25 @@
     }
     .btn-action-wa:hover { transform: translateY(-2px); box-shadow: 0 6px 22px rgba(37,211,102,0.6); }
 
-    /* Floating Action Buttons (3 Floating Buttons) */
+    /* Floating Action Buttons */
     .floating-actions {
       position: fixed;
       bottom: 20px;
       right: 20px;
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      z-index: 1000;
+      gap: 10px;
+      z-index: 999;
     }
     .float-circle {
-      width: 58px;
-      height: 58px;
+      width: 52px;
+      height: 52px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       color: #fff;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       text-decoration: none;
       box-shadow: 0 6px 20px rgba(0,0,0,0.7);
       transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -356,30 +378,45 @@
     .float-wa { background: var(--whatsapp-green); }
     .float-phone { background: var(--blue-electric); border: 1.5px solid var(--gold-primary); }
 
-    /* Footer */
     footer {
       background: #020306;
       border-top: 2px solid var(--gold-dark);
-      padding: 45px 20px 25px;
+      padding: 40px 16px 20px;
       color: var(--text-muted);
       text-align: center;
-      margin-top: 50px;
+      margin-top: 40px;
     }
-    .footer-brand { font-size: 1.6rem; font-weight: 800; color: var(--gold-light); margin-bottom: 10px; }
-    .footer-phone-box { font-size: 1.3rem; font-weight: 800; color: #fff; margin: 15px 0; }
+    .footer-brand { font-size: 1.5rem; font-weight: 800; color: var(--gold-light); margin-bottom: 8px; }
+    .footer-phone-box { font-size: 1.2rem; font-weight: 800; color: #fff; margin: 12px 0; }
     .footer-phone-box a { color: var(--gold-light); text-decoration: none; }
-    .copy { font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 20px; margin-top: 20px; }
+    .copy { font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 15px; margin-top: 15px; }
 
     @media (max-width: 768px) {
-      .page-hero h1 { font-size: 1.75rem; }
-      .article-section { padding: 25px 18px; }
-      .article-img-wrap { height: 250px; }
-      .article-header h2 { font-size: 1.5rem; }
-      .article-content { font-size: 0.98rem; line-height: 1.85; }
+      .top-bar {
+        font-size: 0.75rem;
+        padding: 6px 10px;
+      }
+      .brand-text h2 { font-size: 0.9rem; }
+      .brand-text span { display: none; }
+      .brand-logo { width: 40px; height: 40px; }
+      .page-hero { padding: 35px 12px 25px; }
+      .page-hero h1 { font-size: 1.5rem; }
+      .page-hero p { font-size: 0.95rem; }
+      .article-section { padding: 20px 14px; }
+      .article-img-wrap { height: 220px; }
+      .article-header h2 { font-size: 1.3rem; }
+      .article-content { font-size: 0.95rem; }
+      .btn-header-call { padding: 5px 10px; font-size: 0.75rem; }
+      .floating-actions { bottom: 15px; right: 15px; }
+      .float-circle { width: 46px; height: 46px; font-size: 1.2rem; }
     }
   </style>
 </head>
 <body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9LDD3S8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <!-- Inlined SVG Sprite Sheet -->
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -409,36 +446,39 @@
     </symbol>
   </svg>
 
-  <!-- Top Bar -->
-  <div class="top-bar">
-    <div class="top-bar-info">
-      <span><svg class="icon"><use href="#icon-crown"></use></svg> شركة روفان كلين سرفيس - خبراء جلي الرخام وتلميع الجرانيت والسيراميك</span>
-    </div>
-    <div class="top-bar-phone">
-      <a href="tel:01507110429"><svg class="icon"><use href="#icon-phone"></use></svg> 01507110429</a>
-    </div>
-  </div>
-
-  <!-- Header -->
-  <header>
-    <div class="nav-container">
-      <a href="index.html" class="brand-box">
-        <div class="brand-logo">
-          <img src="images/logo.jpeg" alt="شركة روفان كلين سرفيس" width="54" height="54">
-        </div>
-        <div class="brand-text">
-          <h2>شركة روفان كلين سرفيس</h2>
-          <span>خدمات جلي وتلميع الأرضيات الفاخرة</span>
-        </div>
-      </a>
-      <div class="header-btns">
-        <a href="index.html" style="color:#cbd5e1; text-decoration:none; font-weight:800; font-size:0.95rem; margin-left:12px;">الرئيسية</a>
-        <a href="tel:01507110429" class="btn-header-call">
-          <svg class="icon"><use href="#icon-phone"></use></svg> اتصل الآن
-        </a>
+  <!-- البنر العلوي والشريط العلوي في أعلى الصفحة بشكل طبيعي ويختفي عند التمرير -->
+  <div class="header-wrapper">
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar-info">
+        <span><svg class="icon"><use href="#icon-crown"></use></svg> شركة روفان كلين سرفيس - خبراء جلي الرخام وتلميع الجرانيت والسيراميك</span>
+      </div>
+      <div class="top-bar-phone">
+        <a href="tel:01507110429"><svg class="icon"><use href="#icon-phone"></use></svg> 01507110429</a>
       </div>
     </div>
-  </header>
+
+    <!-- Header -->
+    <header>
+      <div class="nav-container">
+        <a href="https://rovancleanservice.com/" class="brand-box">
+          <div class="brand-logo">
+            <img src="../images/logo.jpeg" alt="شركة روفان كلين سرفيس" width="54" height="54">
+          </div>
+          <div class="brand-text">
+            <h2>شركة روفان كلين سرفيس</h2>
+            <span>خدمات جلي وتلميع الأرضيات الفاخرة</span>
+          </div>
+        </a>
+        <div class="header-btns">
+          <a href="https://rovancleanservice.com/" style="color:#cbd5e1; text-decoration:none; font-weight:800; font-size:0.9rem; margin-left:8px;">الرئيسية</a>
+          <a href="tel:01507110429" class="btn-header-call">
+            <svg class="icon"><use href="#icon-phone"></use></svg> اتصل الآن
+          </a>
+        </div>
+      </div>
+    </header>
+  </div>
 
   <!-- Page Hero -->
   <section class="page-hero">
@@ -456,10 +496,10 @@
 
   <main class="container">
 
-    <!-- المقالة الأولى: جلي وتلميع الرخام (صورة galyrohamg.webp) -->
+    <!-- المقالة الأولى: جلي وتلميع الرخام -->
     <article class="article-section" id="marble-section">
       <div class="article-img-wrap">
-        <img src="images/galyrohamg.webp" alt="جلي وتلميع الرخام بأقراص الكريستال الإيطالية - روفان كلين" width="1000" height="500" fetchpriority="high">
+        <img src="../images/galyrohamg.webp" alt="جلي وتلميع الرخام بأقراص الكريستال الإيطالية - روفان كلين" width="1000" height="500" fetchpriority="high">
       </div>
       <div class="article-header">
         <h2><svg class="icon"><use href="#icon-gem"></use></svg> خدمة جلي وتلميع الرخام: الهندسة المتكاملة لإعادة إحياء الحجر الطبيعي</h2>
@@ -515,10 +555,10 @@
       </div>
     </article>
 
-    <!-- المقالة الثانية: جلي وتلميع الجرانيت (صورة galygranet.webp) -->
+    <!-- المقالة الثانية: جلي وتلميع الجرانيت -->
     <article class="article-section" id="granite-section">
       <div class="article-img-wrap">
-        <img src="images/galygranet.webp" alt="جلي وتلميع الجرانيت الطبيعي بأحدث المعدات - روفان كلين" width="1000" height="500" loading="lazy" decoding="async">
+        <img src="../images/galygranet.webp" alt="جلي وتلميع الجرانيت الطبيعي بأحدث المعدات - روفان كلين" width="1000" height="500" loading="lazy" decoding="async">
       </div>
       <div class="article-header">
         <h2><svg class="icon"><use href="#icon-sparkles"></use></svg> خدمة جلي وتلميع الجرانيت: تكنولوجيا المعالجة المتقدمة للصخور فائقة الصلابة</h2>
@@ -530,7 +570,7 @@
 
         <h3>الفوارق الجوهرية بين جلي الرخام وتلميع الجرانيت</h3>
         <p>
-          بينما يتفاعل الرخام بسهولة مع المركبات الكيميائية وأحماض التلميع، فإن الجرانيت خامل كيميائياً إلى حد كبير ولا يستجيب لطرق التبلور الكريستالي العادية. يعتمد لمعان الجرانيت بالكامل على **التلميع الميكانيكي الدقيق**؛ أي غلق مسام الصخر وصقل ذرات الكوارتز بالصنفرة الألماسية المجهرية حتى تصبح عاكسة للضوء بشكل طبيعي. يتطلب ذلك ماكينات كوكبية (Planetary Grinders) ذات أوزان تتجاوز 120 إلى 160 كجم مع ضغط رأسي موجه لضمان احتكاك متكافئ، مع استخدام تدفق مائي مستمر لتبريد الأقراص ومنع احتراق حبيبات الجرانيت أو تشققها أثناء الدوران السريع.
+          بينما يتفاعل الرخام بسهولة مع المركبات الكيميائية وأحماض التلميع، فإن الجرانيت خامل كيميائياً إلى حد كبير ولا يستجيب لطرق التبلور الكريستالي العادية. يعتمد لمعان الجرانيت بالكامل على <strong>التلميع الميكانيكي الدقيق</strong>؛ أي غلق مسام الصخر وصقل ذرات الكوارتز بالصنفرة الألماسية المجهرية حتى تصبح عاكسة للضوء بشكل طبيعي. يتطلب ذلك ماكينات كوكبية (Planetary Grinders) ذات أوزان تتجاوز 120 إلى 160 كجم مع ضغط رأسي موجه لضمان احتكاك متكافئ، مع استخدام تدفق مائي مستمر لتبريد الأقراص ومنع احتراق حبيبات الجرانيت أو تشققها أثناء الدوران السريع.
         </p>
 
         <h3>خطوات معالجة وجلي الجرانيت في روفان كلين</h3>
@@ -570,14 +610,14 @@
       </div>
       <div class="article-cta">
         <a href="tel:01507110429" class="btn-action-call"><svg class="icon"><use href="#icon-phone"></use></svg> اطلب خدمة جلي الجرانيت: 01507110429</a>
-        <a href="https://wa.me/201507110429?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AC%D9%84%D9%8A%20%D9%88%D8%AA%D9%84%D9%85%D9%8A%D8%B9%20%D8%A7%D9%84%D8%AC%D8%B1%D8%A7%D9%86%D9%8A%D8%AA" target="_blank" class="btn-action-wa"><svg class="icon"><use href="#icon-whatsapp"></use></svg> احجز عبر واتساب الآن</a>
+        <a href="https://wa.me/201507110429?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AC%D9%84%D9%8A%20%D9%88%D8%AA%D9%84%D9%85%D9%8A%D8%B9%20%D8%A7%D8%{C}8%B0%D8%B1%D8%A7%D9%86%D9%8A%D8%AA" target="_blank" class="btn-action-wa"><svg class="icon"><use href="#icon-whatsapp"></use></svg> احجز عبر واتساب الآن</a>
       </div>
     </article>
 
-    <!-- المقالة الثالثة: تنظيف السيراميك شديد الاتساخ (صورة galysramek.webp) -->
+    <!-- المقالة الثالثة: تنظيف السيراميك شديد الاتساخ -->
     <article class="article-section" id="ceramic-section">
       <div class="article-img-wrap">
-        <img src="images/galysramek.webp" alt="تنظيف السيراميك شديد الاتساخ وتفتيح الفواصل - روفان كلين" width="1000" height="500" loading="lazy" decoding="async">
+        <img src="../images/galysramek.webp" alt="تنظيف السيراميك شديد الاتساخ وتفتيح الفواصل - روفان كلين" width="1000" height="500" loading="lazy" decoding="async">
       </div>
       <div class="article-header">
         <h2><svg class="icon"><use href="#icon-border-all"></use></svg> خدمة تنظيف السيراميك والبورسلين شديد الاتساخ: استعادة النقاء وتفتيح الفواصل</h2>
@@ -587,7 +627,7 @@
           يعتبر السيراميك والبورسلين من أكثر خامات الأرضيات انتشاراً في المنازل، المطابخ، الحمامات، والمخازن بفضل تنوع تصميماته ومقاومته للماء. وعلى الرغم من متانة طبقته الزجاجية الخارجية (Glaze)، إلا أن الاستخدام الطويل، وتراكم دهون الطهي، والأملاح الكلسية من مياه الغسيل، وبقايا أعمال التشطيب والدهانات، تؤدي جميعها إلى تحول السيراميك إلى أرضية باهتة ومليئة بالبقع والتكلسات المستعصية. والأسوأ من ذلك هو اسوداد فواصل السيراميك (العراميس الإسمنتية) التي تمتص الأوساخ والبكتيريا والعفن، مما يجعل المنزل يبدو غير نظيف مهما تكررت عمليات المسح التقليدية. تقدم <strong>شركة روفان كلين سرفيس</strong> الحلول الجذرية والنهائية لتنظيف وغسيل السيراميك والبورسلين شديد الاتساخ بتقنيات ميكانيكية وكيميائية آمنة تعيد له رونقه الأصلي كما كان يوم تركيبه الأول.
         </p>
 
-        <h3>مخاطر الطرق التقليدية والمواد الكيميائية العشوائية</h3>
+        <h3>مخاطر الطرق التقليدية والم المواد الكيميائية العشوائية</h3>
         <p>
           يلجأ الكثير من العملاء عند مواجهة اتساخ السيراميك إلى استخدام مواد خطرة مثل "ماء النار" (حمض الهيدروكلوريك المركز) أو مساحيق التنظيف الكاوية مجهولة المصدر؛ ورغم أنها قد تزيل الأوساخ ظاهرياً في الدقائق الأولى، إلا أنها تؤدي إلى حرق الطبقة الزجاجية اللامعة للسيراميك، مما يجعل سطحه خشناً ومسامياً يمتص الأتربة أسرع بعشر مرات من السابق، فضلاً عن تآكل الفواصل الإسمنتية وتفككها وتسريب المياه تحت البلاط، وتصاعد أبخرة سامة تضر بالجهاز التنفسي. في روفان كلين، نستبدل هذه الطرق العشوائية بمركبات تنظيف أوروبية متوازنة ومعتمدة تعمل على تفتيت الروابط الجزيئية للأوساخ دون المساس بسلامة السيراميك أو الإضرار بالفواصل.
         </p>
@@ -629,11 +669,11 @@
       </div>
       <div class="article-cta">
         <a href="tel:01507110429" class="btn-action-call"><svg class="icon"><use href="#icon-phone"></use></svg> اطلب تنظيف السيراميك: 01507110429</a>
-        <a href="https://wa.me/201507110429?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D8%B3%D9%8A%D8%B1%D8%A7%D9%85%D9%8A%D9%83%20%D8%B4%D8%AF%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%AA%D8%B3%D8%A7%D8%AE" target="_blank" class="btn-action-wa"><svg class="icon"><use href="#icon-whatsapp"></use></svg> استفسر عبر واتساب</a>
+        <a href="https://wa.me/201507110429?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D8%B3%D9%8A%D8%B1%D8%A7%D9%85%D9%8A%D9%83" target="_blank" class="btn-action-wa"><svg class="icon"><use href="#icon-whatsapp"></use></svg> استفسر عبر واتساب</a>
       </div>
     </article>
 
-    <!-- المقالة الرابعة: لماذا تختار شركة روفان كلين (صورة الكتالوج galygranet.webp) -->
+    <!-- المقالة الرابعة: لماذا تختار شركة روفان كلين -->
     <article class="article-section" id="why-rovan-section">
       <div class="article-header">
         <h2><svg class="icon"><use href="#icon-shield-check"></use></svg> لماذا تختار شركة روفان كلين كأفضل شركة جلي وتلميع الرخام في مصر؟</h2>
@@ -643,9 +683,9 @@
           عندما يتعلق الأمر بأرضيات الرخام والجرانيت، فإن الخطأ في اختيار الشركة المنفذة قد يكلفك مبالغ طائلة نتيجة تلف الألواح أو تآكلها غير القابل للإصلاح. هنا يبرز اسم <strong>شركة روفان كلين سرفيس</strong> كأفضل وأوثق اختيار لخدمات جلي وتلميع وصيانة الأرضيات الفاخرة في القاهرة الكبرى والجيزة. إن مكانتنا الرائدة لم تأتِ من فراغ، بل هي ثمرة سنوات طويلة من الخبرة الميدانية، والالتزام بأعلى المعايير العالمية في الهندسة السطحية للأحجار الطبيعية، والاعتماد الحصري على التكنولوجيا الإيطالية المتقدمة التي تضمن الوصول إلى أقصى درجات اللمعان والنقاء مع الحفاظ التام على العمر الافتراضي لأرضياتك.
         </p>
 
-        <!-- صورة كتالوج الجرانيت والأرضيات galygranet.webp -->
+        <!-- صورة كتالوج الجرانيت والأرضيات -->
         <div class="inline-article-img">
-          <img src="images/galygranet.webp" alt="كتالوج واحترافية شركة روفان كلين سرفيس في جلي الأرضيات" width="750" height="450" loading="lazy" decoding="async">
+          <img src="../images/galygranet.webp" alt="كتالوج واحترافية شركة روفان كلين سرفيس في جلي الأرضيات" width="750" height="450" loading="lazy" decoding="async">
         </div>
 
         <p>
@@ -674,11 +714,11 @@
       </div>
       <div class="article-cta">
         <a href="tel:01507110429" class="btn-action-call"><svg class="icon"><use href="#icon-phone"></use></svg> احجز موعدك الآن: 01507110429</a>
-        <a href="https://wa.me/201507110429?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D9%85%D8%B9%D8%A7%D9%8A%D9%86%D8%A9%20%D9%88%D8%AD%D8%AC%D8%B2%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AC%D9%84%D9%8A%20%D8%A7%D9%84%D8%B1%D8%AE%D8%A7%D9%85%20%D9%85%D8%B9%20%D8%B1%D9%88%D9%81%D8%A7%D9%86%20%D9%83%D9%84%D9%8A%D9%86" target="_blank" class="btn-action-wa"><svg class="icon"><use href="#icon-whatsapp"></use></svg> تواصل مباشرة عبر واتساب</a>
+        <a href="https://wa.me/201507110429?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D9%85%D8%B9%D8%A7%D9%8A%D9%86%D8%A9%20%D9%88%D8%AD%D8%AC%D8%B2%20%D8%AE%D8%AF%D9%85%D8%A9" target="_blank" class="btn-action-wa"><svg class="icon"><use href="#icon-whatsapp"></use></svg> تواصل مباشرة عبر واتساب</a>
       </div>
     </article>
 
-    <!-- الأقسام الإضافية: التنظيف العميق ولماذا نحن أفضل شركة تنظيف منازل -->
+    <!-- الأقسام الإضافية -->
     <section class="additional-services-section" style="margin-top: 30px;">
       
       <!-- 1. بطاقة التنظيف العميق للمنازل -->
@@ -692,7 +732,7 @@
           </p>
         </div>
         <div style="text-align: center; margin-top: 15px;">
-          <a href="https://rovancleanservice.com/Deepcleaning.html" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: rgba(37, 99, 235, 0.2); border: 2px solid var(--blue-electric); color: var(--blue-light); padding: 13px 28px; border-radius: 35px; text-decoration: none; font-weight: 800; font-size: 1.02rem; transition: 0.3s; box-shadow: 0 4px 18px rgba(37,99,235,0.3);">
+          <a href="../Deepcleaning.html" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: rgba(37, 99, 235, 0.2); border: 2px solid var(--blue-electric); color: var(--blue-light); padding: 13px 28px; border-radius: 35px; text-decoration: none; font-weight: 800; font-size: 1.02rem; transition: 0.3s; box-shadow: 0 4px 18px rgba(37,99,235,0.3);">
             <svg class="icon"><use href="#icon-sparkles"></use></svg> للمزيد من التفاصيل عن خدمه التنظيف العميق
           </a>
         </div>
@@ -709,8 +749,8 @@
           </p>
         </div>
         <div style="text-align: center; margin-top: 15px;">
-          <a href="https://rovancleanservice.com/BestCleaningCompany.html" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: var(--gold-gradient); color: #04070d; border: 2px solid var(--gold-light); padding: 14px 30px; border-radius: 35px; text-decoration: none; font-weight: 800; font-size: 1.05rem; transition: 0.3s; box-shadow: 0 6px 22px rgba(212, 175, 55, 0.45);">
-            <svg class="icon"><use href="#icon-crown"></use></svg> لمزيد من  التفاصيل عن افضل شركة تنظيف منازل في القاهره
+          <a href="../BestCleaningCompany.html" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: var(--gold-gradient); color: #04070d; border: 2px solid var(--gold-light); padding: 14px 30px; border-radius: 35px; text-decoration: none; font-weight: 800; font-size: 1.05rem; transition: 0.3s; box-shadow: 0 6px 22px rgba(212, 175, 55, 0.45);">
+            <svg class="icon"><use href="#icon-crown"></use></svg> لمزيد من التفاصيل عن افضل شركة تنظيف منازل في القاهره
           </a>
         </div>
       </div>
@@ -719,17 +759,15 @@
 
   </main>
 
-  <!-- Floating Quick Buttons (3 Floating Buttons: Home, Call, WhatsApp) -->
+  <!-- Floating Quick Buttons -->
   <div class="floating-actions">
-    <!-- 1. زر الصفحة الرئيسية عائم -->
-    <a href="index.html" class="float-circle float-home" title="الرئيسية" aria-label="الصفحة الرئيسية">
+    <!-- الزر العائم للصفحة الرئيسية موجه للموقع الرئيسي مباشرة -->
+    <a href="https://rovancleanservice.com/" class="float-circle float-home" title="الرئيسية" aria-label="الصفحة الرئيسية">
       <svg class="icon"><use href="#icon-house"></use></svg>
     </a>
-    <!-- 2. زر الواتساب عائم -->
-    <a href="https://wa.me/201507110429?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%AC%D9%84%D9%8A%20%D9%88%D8%AA%D9%84%D9%85%D9%8A%D8%B9%20%D8%A7%D9%84%D8%B1%D8%AE%D8%A7%D9%85" target="_blank" class="float-circle float-wa" aria-label="WhatsApp">
+    <a href="https://wa.me/201507110429?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85" target="_blank" class="float-circle float-wa" aria-label="WhatsApp">
       <svg class="icon"><use href="#icon-whatsapp"></use></svg>
     </a>
-    <!-- 3. زر الاتصال المباشر عائم -->
     <a href="tel:01507110429" class="float-circle float-phone" aria-label="Phone Call">
       <svg class="icon"><use href="#icon-phone"></use></svg>
     </a>
@@ -748,59 +786,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- وحدة التتبع المؤجلة الذكية (Zero-TBT Tracking Loader) -->
-  <script>
-    let isTrackingInitialized = false;
-
-    function initThirdPartyTracking() {
-      if (isTrackingInitialized) return;
-      isTrackingInitialized = true;
-
-      // إزالة مستمعات الأحداث بمجرد التشغيل
-      ['scroll', 'touchstart', 'mousemove', 'keydown'].forEach(evt => {
-        window.removeEventListener(evt, initThirdPartyTracking, { passive: true });
-      });
-
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){ dataLayer.push(arguments); }
-      gtag('js', new Date());
-
-      // سكريبت Google Tag Manager
-      const gtmScript = document.createElement('script');
-      gtmScript.async = true;
-      gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-T9LDD3S8';
-      document.head.appendChild(gtmScript);
-
-      // سكريبت Google Ads
-      const adsScript = document.createElement('script');
-      adsScript.async = true;
-      adsScript.src = 'https://www.googletagmanager.com/gtag/js?id=AW-18406969021';
-      document.head.appendChild(adsScript);
-
-      gtag('config', 'G-Q7B2Q5WBGK');
-      gtag('config', 'AW-18406969021');
-
-      // تتبع نقرات التحويل على الاتصال والواتساب
-      document.querySelectorAll('a[href^="tel:"], a[href*="wa.me"]').forEach(link => {
-        link.addEventListener('click', () => {
-          if (typeof gtag === 'function') {
-            gtag('event', 'conversion', {
-              'send_to': 'AW-18406969021/LsxBCIi15e0cEL2dkMlE'
-            });
-          }
-        });
-      });
-    }
-
-    // الاستماع لأول تفاعل بشري حقيقي من الزائر
-    ['scroll', 'touchstart', 'mousemove', 'keydown'].forEach(evt => {
-      window.addEventListener(evt, initThirdPartyTracking, { passive: true, once: true });
-    });
-
-    // مهلة احتياطية للتحميل في حال عدم التفاعل
-    setTimeout(initThirdPartyTracking, 5000);
-  </script>
 
 </body>
 </html>
