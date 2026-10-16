@@ -18,8 +18,8 @@
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="theme-color" content="#04070d">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+  <!-- Favicon من خارج الفولدر -->
+  <link rel="icon" type="image/jpeg" href="../images/logo.jpeg">
 
   <!-- Typography & Performance Preconnects (Zero-Blocking) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -322,23 +322,26 @@
       border-radius: 2px;
     }
 
-    /* Optimized & Slimmer Article Image Frame */
+    /* Medium-Sized & Fully Uncropped Article Image Frame */
     .article-img-frame {
       width: 100%;
-      max-width: 660px;
-      margin: clamp(18px, 3vw, 26px) auto;
+      max-width: 580px;
+      margin: clamp(18px, 3vw, 28px) auto;
       border-radius: clamp(12px, 2.5vw, 18px);
       overflow: hidden;
       border: 2px solid var(--gold-primary);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 18px rgba(212, 175, 55, 0.25);
       background: #020408;
-      aspect-ratio: 16 / 9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .article-img-frame img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      height: auto;
+      max-height: 85vh;
+      object-fit: contain;
       display: block;
       transition: transform 0.4s ease;
     }
@@ -653,7 +656,7 @@
     <div class="container nav-container">
       <a href="https://rovancleanservice.com/" class="brand-box">
         <div class="brand-logo">
-          <img src="images/logo.jpeg" alt="لوجو شركة روفان كلين سرفيس" width="52" height="52">
+          <img src="../images/logo.jpeg" alt="لوجو شركة روفان كلين سرفيس" width="52" height="52">
         </div>
         <div class="brand-text">
           <h1>شركة روفان كلين سرفيس</h1>
@@ -720,12 +723,12 @@
         </p>
       </div>
 
-      <!-- الصور المحدثة بعد المقال الأول بعرض مصغر وسرعة فائقة -->
+      <!-- الصور المحدثة بعد المقال الأول بحجم متوسط وظهور كامل دون اقتصاص -->
       <div class="article-img-frame">
-        <img src="images/living-room-before-during-after.webp" alt="تنظيف الصالات وغرف المعيشة بعد التشطيب قبل وأثناء وبعد - شركة روفان كلين سرفيس" loading="lazy" decoding="async" width="660" height="371">
+        <img src="images/living-room-before-during-after.webp" alt="تنظيف الصالات وغرف المعيشة بعد التشطيب قبل وأثناء وبعد - شركة روفان كلين سرفيس" loading="lazy" decoding="async">
       </div>
       <div class="article-img-frame">
-        <img src="images/kitchen-before-during-after.webp" alt="تنظيف المطابخ بعد التشطيب قبل وأثناء وبعد - شركة روفان كلين سرفيس" loading="lazy" decoding="async" width="660" height="371">
+        <img src="images/kitchen-before-during-after.webp" alt="تنظيف المطابخ بعد التشطيب قبل وأثناء وبعد - شركة روفان كلين سرفيس" loading="lazy" decoding="async">
       </div>
 
       <div class="article-cta-box">
@@ -766,12 +769,12 @@
         </p>
       </div>
 
-      <!-- الصور المحدثة بعد المقال الثاني بعرض مصغر وسرعة فائقة -->
+      <!-- الصور المحدثة بعد المقال الثاني بحجم متوسط وظهور كامل دون اقتصاص -->
       <div class="article-img-frame">
-        <img src="images/palace-post-construction-before-during-after.webp" alt="تنظيف القصور الفاخرة بعد التشطيب قبل وأثناء وبعد - شركة روفان كلين سرفيس" loading="lazy" decoding="async" width="660" height="371">
+        <img src="images/palace-post-construction-before-during-after.webp" alt="تنظيف القصور الفاخرة بعد التشطيب قبل وأثناء وبعد - شركة روفان كلين سرفيس" loading="lazy" decoding="async">
       </div>
       <div class="article-img-frame">
-        <img src="images/villa-post-construction-before-during-after.webp" alt="تنظيف الفلل الراقية بعد التشطيب قبل وأثناء وبعد - شركة روفان كلين سرفيس" loading="lazy" decoding="async" width="660" height="371">
+        <img src="images/villa-post-construction-before-during-after.webp" alt="تنظيف الفلل الراقية بعد التشطيب قبل وأثناء وبعد - شركة روفان كلين سرفيس" loading="lazy" decoding="async">
       </div>
 
       <div class="article-cta-box">
@@ -809,9 +812,9 @@
         </p>
       </div>
 
-      <!-- الصورة المحدثة بعد المقال الثالث بعرض مصغر وسرعة فائقة -->
+      <!-- الصورة المحدثة بعد المقال الثالث بحجم متوسط وظهور كامل دون اقتصاص -->
       <div class="article-img-frame">
-        <img src="images/living-room-before-during-after.webp" alt="تنظيف المساحات الكبرى والصالات بعد التشطيب قبل وأثناء وبعد - روفان كلين" loading="lazy" decoding="async" width="660" height="371">
+        <img src="images/living-room-before-during-after.webp" alt="تنظيف المساحات الكبرى والصالات بعد التشطيب قبل وأثناء وبعد - روفان كلين" loading="lazy" decoding="async">
       </div>
 
       <div class="article-cta-box">
@@ -849,9 +852,9 @@
         </p>
       </div>
 
-      <!-- الصورة المحدثة بعد المقال الرابع بعرض مصغر وسرعة فائقة -->
+      <!-- الصورة المحدثة بعد المقال الرابع بحجم متوسط وظهور كامل دون اقتصاص -->
       <div class="article-img-frame">
-        <img src="images/marble-foyer-before-during-after.webp" alt="تنظيف مداخل الرخام والأرضيات بشركة تنظيف منازل احترافية - روفان كلين سرفيس" loading="lazy" decoding="async" width="660" height="371">
+        <img src="images/marble-foyer-before-during-after.webp" alt="تنظيف مداخل الرخام والأرضيات بشركة تنظيف منازل احترافية - روفان كلين سرفيس" loading="lazy" decoding="async">
       </div>
 
       <div class="article-cta-box">
@@ -961,7 +964,6 @@
 
       // تحميل Google Ads
       const adsScript = document.createElement('script');
-      adsScript.async = true;
       adsScript.src = 'https://www.googletagmanager.com/gtag/js?id=AW-18406969021';
       document.head.appendChild(adsScript);
 
