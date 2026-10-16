@@ -19,49 +19,18 @@
   <meta name="theme-color" content="#04070d">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/jpeg" href="../images/logo.jpeg">
+  <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-T9LDD3S8');</script>
-  <!-- End Google Tag Manager -->
-
-  <!-- Deferred Google Tracking (GA4 & Google Ads) -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    function loadTrackingScripts() {
-      const gtmScript = document.createElement('script');
-      gtmScript.src = "https://www.googletagmanager.com/gtag/js?id=G-Q7B2Q5WBGK";
-      gtmScript.async = true;
-      document.head.appendChild(gtmScript);
-
-      const adsScript = document.createElement('script');
-      adsScript.src = "https://www.googletagmanager.com/gtag/js?id=AW-18406969021";
-      adsScript.async = true;
-      document.head.appendChild(adsScript);
-
-      gtag('config', 'G-Q7B2Q5WBGK');
-      gtag('config', 'AW-18406969021');
-    }
-
-    if (window.requestIdleCallback) {
-      window.requestIdleCallback(loadTrackingScripts, { timeout: 2500 });
-    } else {
-      window.addEventListener('load', loadTrackingScripts);
-    }
-  </script>
-
-  <!-- Typography & Performance Preconnects -->
+  <!-- Typography & Performance Preconnects (Zero-Blocking) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap"></noscript>
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 
   <style>
     :root {
@@ -306,10 +275,12 @@
       flex-wrap: wrap;
     }
 
-    /* Article Sections */
+    /* Article Sections (Virtual Layout for Zero Render Blocking) */
     .article-section {
       padding: clamp(40px, 6vw, 75px) 0;
       border-bottom: 1px solid var(--border-color);
+      content-visibility: auto;
+      contain-intrinsic-size: 1px 750px;
     }
 
     .article-section:nth-of-type(even) {
@@ -351,21 +322,23 @@
       border-radius: 2px;
     }
 
-    /* Article Image Frame */
+    /* Optimized & Slimmer Article Image Frame */
     .article-img-frame {
       width: 100%;
-      max-width: 800px;
-      margin: clamp(20px, 3vw, 30px) auto;
-      border-radius: clamp(14px, 3vw, 20px);
+      max-width: 660px;
+      margin: clamp(18px, 3vw, 26px) auto;
+      border-radius: clamp(12px, 2.5vw, 18px);
       overflow: hidden;
       border: 2px solid var(--gold-primary);
-      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 175, 55, 0.25);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 18px rgba(212, 175, 55, 0.25);
       background: #020408;
+      aspect-ratio: 16 / 9;
     }
 
     .article-img-frame img {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
       display: block;
       transition: transform 0.4s ease;
     }
@@ -486,6 +459,8 @@
       border-top: 2px solid var(--border-color);
       padding: clamp(35px, 5vw, 55px) 16px;
       text-align: center;
+      content-visibility: auto;
+      contain-intrinsic-size: 1px 300px;
     }
 
     .bottom-seo-links-inner {
@@ -678,10 +653,7 @@
     <div class="container nav-container">
       <a href="https://rovancleanservice.com/" class="brand-box">
         <div class="brand-logo">
-<img src="../images/logo.jpeg"
-     alt="شركة روفان كلين سرفيس"
-     width="52"
-     height="52">
+          <img src="images/logo.jpeg" alt="لوجو شركة روفان كلين سرفيس" width="52" height="52">
         </div>
         <div class="brand-text">
           <h1>شركة روفان كلين سرفيس</h1>
@@ -748,12 +720,12 @@
         </p>
       </div>
 
-      <!-- الصور المحدثة بعد المقال الأول -->
+      <!-- الصور المحدثة بعد المقال الأول بعرض مصغر وسرعة فائقة -->
       <div class="article-img-frame">
-     <img src="images/living-room-before-during-after.webp" alt="تنظيف المنزل بعد التشطيب"> alt="تنظيف الصالات وغرف المعيشة بعد التشطيب قبل وأثناء وبعد - شركة روفان كلين سرفيس" loading="lazy" width="800" height="450">
+        <img src="images/living-room-before-during-after.webp" alt="تنظيف الصالات وغرف المعيشة بعد التشطيب قبل وأثناء وبعد - شركة روفان كلين سرفيس" loading="lazy" decoding="async" width="660" height="371">
       </div>
       <div class="article-img-frame">
-       <img src="images/kitchen-before-during-after.webp" alt="Kitchen Post-Construction Cleaning"> alt="تنظيف المطابخ بعد التشطيب قبل وأثناء وبعد - شركة روفان كلين سرفيس" loading="lazy" width="800" height="450">
+        <img src="images/kitchen-before-during-after.webp" alt="تنظيف المطابخ بعد التشطيب قبل وأثناء وبعد - شركة روفان كلين سرفيس" loading="lazy" decoding="async" width="660" height="371">
       </div>
 
       <div class="article-cta-box">
@@ -794,12 +766,12 @@
         </p>
       </div>
 
-      <!-- الصور المحدثة بعد المقال الثاني -->
+      <!-- الصور المحدثة بعد المقال الثاني بعرض مصغر وسرعة فائقة -->
       <div class="article-img-frame">
-      <img src="images/palace-post-construction-before-during-after.webp" alt="تنظيف القصور الفاخرة بعد التشطيب قبل وأثناء وبعد - شركة روفان كلين سرفيس" loading="lazy" width="800" height="450">
+        <img src="images/palace-post-construction-before-during-after.webp" alt="تنظيف القصور الفاخرة بعد التشطيب قبل وأثناء وبعد - شركة روفان كلين سرفيس" loading="lazy" decoding="async" width="660" height="371">
       </div>
       <div class="article-img-frame">
-        <img src="images/villa-post-construction-before-during-after.webp" alt="تنظيف الفلل الراقية بعد التشطيب قبل وأثناء وبعد - شركة روفان كلين سرفيس" loading="lazy" width="800" height="450">
+        <img src="images/villa-post-construction-before-during-after.webp" alt="تنظيف الفلل الراقية بعد التشطيب قبل وأثناء وبعد - شركة روفان كلين سرفيس" loading="lazy" decoding="async" width="660" height="371">
       </div>
 
       <div class="article-cta-box">
@@ -837,9 +809,9 @@
         </p>
       </div>
 
-      <!-- الصورة المحدثة بعد المقال الثالث -->
+      <!-- الصورة المحدثة بعد المقال الثالث بعرض مصغر وسرعة فائقة -->
       <div class="article-img-frame">
-        <img src="images/living-room-before-during-after.webp" alt="تنظيف المساحات الكبرى والصالات بعد التشطيب قبل وأثناء وبعد - روفان كلين" loading="lazy" width="800" height="450">
+        <img src="images/living-room-before-during-after.webp" alt="تنظيف المساحات الكبرى والصالات بعد التشطيب قبل وأثناء وبعد - روفان كلين" loading="lazy" decoding="async" width="660" height="371">
       </div>
 
       <div class="article-cta-box">
@@ -877,9 +849,9 @@
         </p>
       </div>
 
-      <!-- الصورة المحدثة بعد المقال الرابع -->
+      <!-- الصورة المحدثة بعد المقال الرابع بعرض مصغر وسرعة فائقة -->
       <div class="article-img-frame">
-        <img src="images/marble-foyer-before-during-after.webp" alt="تنظيف مداخل الرخام والأرضيات بشركة تنظيف منازل احترافية - روفان كلين سرفيس" loading="lazy" width="800" height="450">
+        <img src="images/marble-foyer-before-during-after.webp" alt="تنظيف مداخل الرخام والأرضيات بشركة تنظيف منازل احترافية - روفان كلين سرفيس" loading="lazy" decoding="async" width="660" height="371">
       </div>
 
       <div class="article-cta-box">
@@ -958,11 +930,46 @@
     </div>
   </footer>
 
-  <!-- Conversion Tracking Event Listeners -->
+  <!-- وحدة التتبع المؤجلة الذكية (Zero-TBT Tracking Loader for 100% PageSpeed) -->
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const contactLinks = document.querySelectorAll('a[href^="tel:"], a[href*="wa.me"]');
-      contactLinks.forEach(function(link) {
+    let isTrackingInitialized = false;
+
+    function initThirdPartyTracking() {
+      if (isTrackingInitialized) return;
+      isTrackingInitialized = true;
+
+      // إزالة مستمعات الأحداث بمجرد التشغيل لتوفير موارد المتصفح
+      ['scroll', 'touchstart', 'mousemove', 'keydown'].forEach(function(evt) {
+        window.removeEventListener(evt, initThirdPartyTracking, { passive: true });
+      });
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      // تحميل Google Tag Manager
+      const gtmScript = document.createElement('script');
+      gtmScript.async = true;
+      gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-T9LDD3S8';
+      document.head.appendChild(gtmScript);
+
+      // تحميل Google Analytics 4
+      const gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-Q7B2Q5WBGK';
+      document.head.appendChild(gaScript);
+
+      // تحميل Google Ads
+      const adsScript = document.createElement('script');
+      adsScript.async = true;
+      adsScript.src = 'https://www.googletagmanager.com/gtag/js?id=AW-18406969021';
+      document.head.appendChild(adsScript);
+
+      gtag('config', 'G-Q7B2Q5WBGK');
+      gtag('config', 'AW-18406969021');
+
+      // تتبع نقرات التحويل على أزرار الاتصال والواتساب
+      document.querySelectorAll('a[href^="tel:"], a[href*="wa.me"]').forEach(function(link) {
         link.addEventListener('click', function() {
           if (typeof gtag === 'function') {
             gtag('event', 'conversion', {
@@ -971,7 +978,19 @@
           }
         });
       });
+    }
+
+    // الاستماع لأول تفاعل بشري حقيقي من الزائر لتحقيق أعلى سرعة رسم مبدئي
+    ['scroll', 'touchstart', 'mousemove', 'keydown'].forEach(function(evt) {
+      window.addEventListener(evt, initThirdPartyTracking, { passive: true, once: true });
     });
+
+    // مهلة احتياطية للتحميل في حال عدم حدوث تفاعل فوري
+    if (window.requestIdleCallback) {
+      window.requestIdleCallback(initThirdPartyTracking, { timeout: 4000 });
+    } else {
+      setTimeout(initThirdPartyTracking, 4000);
+    }
   </script>
 
 </body>
